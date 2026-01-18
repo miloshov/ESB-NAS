@@ -1,0 +1,256 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="admin-layout">
+    <aside class="admin-sidebar">
+        <div style="padding: 0 20px; margin-bottom: 20px;">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                ESB-NAS
+            </div>
+        </div>
+        
+        <nav>
+            <ul class="sidebar-nav">
+                <li><a href="{{ url_for('admin.dashboard') }}">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                    </svg>
+                    <span>Dashboard</span>
+                </a></li>
+                <li><a href="{{ url_for('admin.templates') }}">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                    </svg>
+                    <span>Templates</span>
+                </a></li>
+                <li><a href="{{ url_for('admin.recipients') }}" class="active">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                    </svg>
+                    <span>Recipients</span>
+                </a></li>
+                <li><a href="{{ url_for('admin.integrations') }}">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.01 2C6.49 2 2 6.49 2 12.01s4.49 10.01 10.01 10.01S22.03 17.53 22.03 12.01 17.53 2 12.01 2zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                    <span>Integrations</span>
+                </a></li>
+                <li><a href="{{ url_for('admin.test') }}">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                    </svg>
+                    <span>Test</span>
+                </a></li>
+                <li><a href="#" onclick="openModal('password-modal'); return false;">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                    </svg>
+                    <span>Settings</span>
+                </a></li>
+                <li><a href="{{ url_for('main.logout') }}">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"/>
+                    </svg>
+                    <span>Logout</span>
+                </a></li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <main class="admin-content">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+            <h1>Recipient Management</h1>
+            <button class="btn btn-primary" onclick="openModal('recipient-modal')">+ Add Recipient</button>
+        </div>
+        
+        <div class="card">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Phone</th>
+                            <th>Telegram</th>
+                            <th>Slack</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for recipient in recipients %}
+                        <tr>
+                            <td><strong>{{ recipient.name }}</strong></td>
+                            <td>{{ recipient.email or '-' }}</td>
+                            <td>{{ recipient.phone or '-' }}</td>
+                            <td>{{ recipient.telegram_chat_id or '-' }}</td>
+                            <td>{{ recipient.slack_channel or '-' }}</td>
+                            <td>
+                                <span class="badge badge-{{ 'success' if recipient.is_active else 'danger' }}">
+                                    {{ 'Active' if recipient.is_active else 'Inactive' }}
+                                </span>
+                            </td>
+                            <td style="white-space: nowrap;">
+                                <button class="btn btn-sm btn-secondary" style="margin-right: 8px;" 
+                                        data-edit="{{ recipient.id }}"
+                                        data-name="{{ recipient.name }}"
+                                        data-email="{{ recipient.email or '' }}"
+                                        data-phone="{{ recipient.phone or '' }}"
+                                        data-telegram="{{ recipient.telegram_chat_id or '' }}"
+                                        data-slack="{{ recipient.slack_channel or '' }}">
+                                    Edit
+                                </button>
+                                <form action="{{ url_for('admin.toggle_recipient', recipient_id=recipient.id) }}" method="POST" style="display: inline;">
+                                    <button type="submit" class="btn btn-sm btn-{{ 'outline' if recipient.is_active else 'primary' }}" style="margin-right: 8px;">
+                                        {{ 'Deactivate' if recipient.is_active else 'Activate' }}
+                                    </button>
+                                </form>
+                                <button class="btn btn-sm btn-outline" style="margin-right: 8px;" 
+                                        data-delete-url="{{ url_for('admin.delete_recipient', recipient_id=recipient.id) }}"
+                                        data-delete-name="{{ recipient.name }}">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                        {% else %}
+                        <tr>
+                            <td colspan="7" style="text-align: center; padding: 40px;">
+                                No recipients yet. Add recipients to receive alerts!
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!-- Add/Edit Recipient Modal -->
+<div class="modal" id="recipient-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="recipient-modal-title">Add Recipient</h2>
+            <button class="modal-close" onclick="closeModal('recipient-modal')">&times;</button>
+        </div>
+        
+        <form method="POST">
+            <input type="hidden" name="action" value="add" id="recipient-action">
+            <input type="hidden" name="recipient_id" id="recipient-id">
+            
+            <div class="form-group">
+                <label class="form-label">Name</label>
+                <input type="text" class="form-input" name="name" id="recipient-name" required placeholder="e.g., John Doe">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Email</label>
+                <input type="email" class="form-input" name="email" id="recipient-email" placeholder="john@example.com">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Phone</label>
+                <input type="text" class="form-input" name="phone" id="recipient-phone" placeholder="+1234567890">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Telegram Chat ID</label>
+                <input type="text" class="form-input" name="telegram_chat_id" id="recipient-telegram" placeholder="123456789">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Slack Channel</label>
+                <input type="text" class="form-input" name="slack_channel" id="recipient-slack" placeholder="#alerts">
+            </div>
+            
+            <div style="display: flex; gap: 10px; justify-content: flex-end;">
+                <button type="button" class="btn btn-secondary" onclick="closeModal('recipient-modal')">Cancel</button>
+                <button type="submit" class="btn btn-primary">Save Recipient</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Password Modal -->
+<div class="modal" id="password-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Change Password</h2>
+            <button class="modal-close" onclick="closeModal('password-modal')">&times;</button>
+        </div>
+        
+        <form method="POST" action="{{ url_for('admin.change_password') }}">
+            <div class="form-group">
+                <label class="form-label">Current Password</label>
+                <input type="password" class="form-input" name="current_password" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">New Password</label>
+                <input type="password" class="form-input" name="new_password" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Confirm New Password</label>
+                <input type="password" class="form-input" name="confirm_password" required>
+            </div>
+            
+            <div style="display: flex; gap: 10px; justify-content: flex-end;">
+                <button type="button" class="btn btn-secondary" onclick="closeModal('password-modal')">Cancel</button>
+                <button type="submit" class="btn btn-primary">Change Password</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="toast-container"></div>
+
+<script>
+    // Handle edit buttons using data attributes
+    document.querySelectorAll('[data-edit]').forEach(btn => {
+        btn.addEventListener('click', function() {
+            document.getElementById('recipient-modal-title').textContent = 'Edit Recipient';
+            document.getElementById('recipient-action').value = 'edit';
+            document.getElementById('recipient-id').value = this.dataset.edit;
+            document.getElementById('recipient-name').value = this.dataset.name;
+            document.getElementById('recipient-email').value = this.dataset.email;
+            document.getElementById('recipient-phone').value = this.dataset.phone;
+            document.getElementById('recipient-telegram').value = this.dataset.telegram;
+            document.getElementById('recipient-slack').value = this.dataset.slack;
+            openModal('recipient-modal');
+        });
+    });
+    
+    // Handle delete buttons using data attributes
+    document.querySelectorAll('[data-delete-url]').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const url = this.dataset.deleteUrl;
+            const name = this.dataset.deleteName;
+            const message = `Are you sure you want to delete "${name}"?`;
+            if (confirm(message)) {
+                // Create and submit a form for delete
+                const form = document.createElement('form');
+                form.method = 'POST';
+                form.action = url;
+                document.body.appendChild(form);
+                form.submit();
+            }
+        });
+    });
+    
+    // Reset form when opening for add
+    document.querySelector('button[onclick="openModal(\'recipient-modal\')"]').addEventListener('click', function() {
+        document.getElementById('recipient-modal-title').textContent = 'Add Recipient';
+        document.getElementById('recipient-action').value = 'add';
+        document.getElementById('recipient-id').value = '';
+        document.getElementById('recipient-name').value = '';
+        document.getElementById('recipient-email').value = '';
+        document.getElementById('recipient-phone').value = '';
+        document.getElementById('recipient-telegram').value = '';
+        document.getElementById('recipient-slack').value = '';
+    });
+</script>
+{% endblock %}

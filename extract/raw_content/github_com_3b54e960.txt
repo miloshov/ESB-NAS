@@ -1,0 +1,404 @@
+# Source URL: https://github.com/miloshov/ESB-NAS
+# Content Length: 21338 characters
+# Extracted at: 2026-01-18 19:31:26
+#============================================================
+
+GitHub - miloshov/ESB-NAS: Emergency Notification Alert System - Standalone application for sending urgent messages via Email, SMS, Telegram, and Slack
+[Skip to content](#start-of-content)
+## Navigation Menu
+Toggle navigation
+[Sign in](/login?return\_to=https%3A%2F%2Fgithub.com%2Fmiloshov%2FESB-NAS)
+Appearance settings
+\* Platform
++ AI CODE CREATION
+- [GitHub CopilotWrite better code with AI](https://github.com/features/copilot)
+- [GitHub SparkBuild and deploy intelligent apps](https://github.com/features/spark)
+- [GitHub ModelsManage and compare prompts](https://github.com/features/models)
+- [MCP RegistryNewIntegrate external tools](https://github.com/mcp)
++ DEVELOPER WORKFLOWS
+- [ActionsAutomate any workflow](https://github.com/features/actions)
+- [CodespacesInstant dev environments](https://github.com/features/codespaces)
+- [IssuesPlan and track work](https://github.com/features/issues)
+- [Code ReviewManage code changes](https://github.com/features/code-review)
++ APPLICATION SECURITY
+- [GitHub Advanced SecurityFind and fix vulnerabilities](https://github.com/security/advanced-security)
+- [Code securitySecure your code as you build](https://github.com/security/advanced-security/code-security)
+- [Secret protectionStop leaks before they start](https://github.com/security/advanced-security/secret-protection)
++ EXPLORE
+- [Why GitHub](https://github.com/why-github)
+- [Documentation](https://docs.github.com)
+- [Blog](https://github.blog)
+- [Changelog](https://github.blog/changelog)
+- [Marketplace](https://github.com/marketplace)
+[View all features](https://github.com/features)
+\* Solutions
++ BY COMPANY SIZE
+- [Enterprises](https://github.com/enterprise)
+- [Small and medium teams](https://github.com/team)
+- [Startups](https://github.com/enterprise/startups)
+- [Nonprofits](https://github.com/solutions/industry/nonprofits)
++ BY USE CASE
+- [App Modernization](https://github.com/solutions/use-case/app-modernization)
+- [DevSecOps](https://github.com/solutions/use-case/devsecops)
+- [DevOps](https://github.com/solutions/use-case/devops)
+- [CI/CD](https://github.com/solutions/use-case/ci-cd)
+- [View all use cases](https://github.com/solutions/use-case)
++ BY INDUSTRY
+- [Healthcare](https://github.com/solutions/industry/healthcare)
+- [Financial services](https://github.com/solutions/industry/financial-services)
+- [Manufacturing](https://github.com/solutions/industry/manufacturing)
+- [Government](https://github.com/solutions/industry/government)
+- [View all industries](https://github.com/solutions/industry)
+[View all solutions](https://github.com/solutions)
+\* Resources
++ EXPLORE BY TOPIC
+- [AI](https://github.com/resources/articles?topic=ai)
+- [Software Development](https://github.com/resources/articles?topic=software-development)
+- [DevOps](https://github.com/resources/articles?topic=devops)
+- [Security](https://github.com/resources/articles?topic=security)
+- [View all topics](https://github.com/resources/articles)
++ EXPLORE BY TYPE
+- [Customer stories](https://github.com/customer-stories)
+- [Events & webinars](https://github.com/resources/events)
+- [Ebooks & reports](https://github.com/resources/whitepapers)
+- [Business insights](https://github.com/solutions/executive-insights)
+- [GitHub Skills](https://skills.github.com)
++ SUPPORT & SERVICES
+- [Documentation](https://docs.github.com)
+- [Customer support](https://support.github.com)
+- [Community forum](https://github.com/orgs/community/discussions)
+- [Trust center](https://github.com/trust-center)
+- [Partners](https://github.com/partners)
+\* Open Source
++ COMMUNITY
+- [GitHub SponsorsFund open source developers](https://github.com/sponsors)
++ PROGRAMS
+- [Security Lab](https://securitylab.github.com)
+- [Maintainer Community](https://maintainers.github.com)
+- [Accelerator](https://github.com/accelerator)
+- [Archive Program](https://archiveprogram.github.com)
++ REPOSITORIES
+- [Topics](https://github.com/topics)
+- [Trending](https://github.com/trending)
+- [Collections](https://github.com/collections)
+\* Enterprise
++ ENTERPRISE SOLUTIONS
+- [Enterprise platformAI-powered developer platform](https://github.com/enterprise)
++ AVAILABLE ADD-ONS
+- [GitHub Advanced SecurityEnterprise-grade security features](https://github.com/security/advanced-security)
+- [Copilot for BusinessEnterprise-grade AI features](https://github.com/features/copilot/copilot-business)
+- [Premium SupportEnterprise-grade 24/7 support](https://github.com/premium-support)
+\* [Pricing](https://github.com/pricing)
+Search or jump to...
+# Search code, repositories, users, issues, pull requests...
+Search
+Clear
+[Search syntax tips](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax)
+# Provide feedback
+We read every piece of feedback, and take your input very seriously.
+Include my email address so I can be contacted
+Cancel
+Submit feedback
+# Saved searches
+## Use saved searches to filter your results more quickly
+Name
+Query
+To see all available qualifiers, see our [documentation](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax).
+Cancel
+Create saved search
+[Sign in](/login?return\_to=https%3A%2F%2Fgithub.com%2Fmiloshov%2FESB-NAS)
+[Sign up](/signup?ref\_cta=Sign+up&ref\_loc=header+logged+out&ref\_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E&source=header-repo&source\_repo=miloshov%2FESB-NAS)
+Appearance settings
+Resetting focus
+You signed in with another tab or window. Reload to refresh your session.You signed out in another tab or window. Reload to refresh your session.You switched accounts on another tab or window. Reload to refresh your session.Dismiss alert
+[miloshov](/miloshov)/\*\*[ESB-NAS](/miloshov/ESB-NAS)\*\*Public
+\* [Notifications](/login?return\_to=%2Fmiloshov%2FESB-NAS)You must be signed in to change notification settings
+\* [Fork
+0](/login?return\_to=%2Fmiloshov%2FESB-NAS)
+\* [Star
+0](/login?return\_to=%2Fmiloshov%2FESB-NAS)
+Emergency Notification Alert System - Standalone application for sending urgent messages via Email, SMS, Telegram, and Slack
+[0
+stars](/miloshov/ESB-NAS/stargazers)[0
+forks](/miloshov/ESB-NAS/forks)[Branches](/miloshov/ESB-NAS/branches)[Tags](/miloshov/ESB-NAS/tags)[Activity](/miloshov/ESB-NAS/activity)
+[Star](/login?return\_to=%2Fmiloshov%2FESB-NAS)
+[Notifications](/login?return\_to=%2Fmiloshov%2FESB-NAS)You must be signed in to change notification settings
+\* [Code](/miloshov/ESB-NAS)
+\* [Issues0](/miloshov/ESB-NAS/issues)
+\* [Pull requests0](/miloshov/ESB-NAS/pulls)
+\* [Actions](/miloshov/ESB-NAS/actions)
+\* [Projects0](/miloshov/ESB-NAS/projects)
+\* [Security](/miloshov/ESB-NAS/security)
+[### Uh oh!](/miloshov/ESB-NAS/security)
+[There was an error while loading.](/miloshov/ESB-NAS/security) Please reload this page.
+\* [Insights](/miloshov/ESB-NAS/pulse)
+Additional navigation options
+\* [Code](/miloshov/ESB-NAS)
+\* [Issues](/miloshov/ESB-NAS/issues)
+\* [Pull requests](/miloshov/ESB-NAS/pulls)
+\* [Actions](/miloshov/ESB-NAS/actions)
+\* [Projects](/miloshov/ESB-NAS/projects)
+\* [Security](/miloshov/ESB-NAS/security)
+\* [Insights](/miloshov/ESB-NAS/pulse)
+# miloshov/ESB-NAS
+main
+[\*\*2\*\*Branches](/miloshov/ESB-NAS/branches)[\*\*0\*\*Tags](/miloshov/ESB-NAS/tags)
+Go to file
+Code
+Open more actions menu
+## Folders and files
+| Name | Name | Last commit message | Last commit date |
+| --- | --- | --- | --- |
+| Latest commit Miloshov [Fix: Create ZIP files in ESB-NAS subfolder for upload-artifact compat…](/miloshov/ESB-NAS/commit/6e4416a6d07a2877634522420957e1af7c85d3c6) Open commit details Jan 17, 2026 [6e4416a](/miloshov/ESB-NAS/commit/6e4416a6d07a2877634522420957e1af7c85d3c6) · Jan 17, 2026 History[32 Commits](/miloshov/ESB-NAS/commits/main/) Open commit details |
+| [.github/workflows](/miloshov/ESB-NAS/tree/main/.github/workflows) | [.github/workflows](/miloshov/ESB-NAS/tree/main/.github/workflows) | [Fix: use Python for ZIP creation instead of PowerShell (Run #15 issue)](/miloshov/ESB-NAS/commit/4d2fb7b767af7888e62b3bec1a5de2162254fb57) | Jan 17, 2026 |
+| [app](/miloshov/ESB-NAS/tree/main/app) | [app](/miloshov/ESB-NAS/tree/main/app) | [Fix SMS recipient issue: normalize phone numbers and add logging](/miloshov/ESB-NAS/commit/953c74c37c92d3e6a9c8b0c05e6b3f5af3687b21) | Jan 17, 2026 |
+| [database](/miloshov/ESB-NAS/tree/main/database) | [database](/miloshov/ESB-NAS/tree/main/database) | [Initial commit: ESB-NAS Emergency Notification Alert System](/miloshov/ESB-NAS/commit/6baa9cec930fcc0e259b0db3da5a5d9d35d7e8c3) | Jan 16, 2026 |
+| [hooks](/miloshov/ESB-NAS/tree/main/hooks) | [hooks](/miloshov/ESB-NAS/tree/main/hooks) | [Fix template loading for PyInstaller](/miloshov/ESB-NAS/commit/17cae8d0f9e90612a845b8a6fe2344fa0706bc7d) | Jan 16, 2026 |
+| [translations](/miloshov/ESB-NAS/tree/main/translations) | [translations](/miloshov/ESB-NAS/tree/main/translations) | [Initial commit: ESB-NAS Emergency Notification Alert System](/miloshov/ESB-NAS/commit/6baa9cec930fcc0e259b0db3da5a5d9d35d7e8c3) | Jan 16, 2026 |
+| [.gitignore](/miloshov/ESB-NAS/blob/main/.gitignore) | [.gitignore](/miloshov/ESB-NAS/blob/main/.gitignore) | [Initial commit: ESB-NAS Emergency Notification Alert System](/miloshov/ESB-NAS/commit/6baa9cec930fcc0e259b0db3da5a5d9d35d7e8c3) | Jan 16, 2026 |
+| [BUILD\\_WINDOWS.md](/miloshov/ESB-NAS/blob/main/BUILD\_WINDOWS.md) | [BUILD\\_WINDOWS.md](/miloshov/ESB-NAS/blob/main/BUILD\_WINDOWS.md) | [Add standalone Windows executable build support](/miloshov/ESB-NAS/commit/3fa3638955ad52ca534e36422a8680bef619c92c) | Jan 16, 2026 |
+| [ESB-NAS.spec](/miloshov/ESB-NAS/blob/main/ESB-NAS.spec) | [ESB-NAS.spec](/miloshov/ESB-NAS/blob/main/ESB-NAS.spec) | [Fix Flask-Login and blueprint endpoint issues](/miloshov/ESB-NAS/commit/6de016bf864848b6bd859fe0e85b96ddd6e903bf) | Jan 16, 2026 |
+| [README.md](/miloshov/ESB-NAS/blob/main/README.md) | [README.md](/miloshov/ESB-NAS/blob/main/README.md) | [Add standalone Windows executable build support](/miloshov/ESB-NAS/commit/3fa3638955ad52ca534e36422a8680bef619c92c) | Jan 16, 2026 |
+| [build.bat](/miloshov/ESB-NAS/blob/main/build.bat) | [build.bat](/miloshov/ESB-NAS/blob/main/build.bat) | [Add standalone Windows executable build support](/miloshov/ESB-NAS/commit/3fa3638955ad52ca534e36422a8680bef619c92c) | Jan 16, 2026 |
+| [build\\_exe.py](/miloshov/ESB-NAS/blob/main/build\_exe.py) | [build\\_exe.py](/miloshov/ESB-NAS/blob/main/build\_exe.py) | [Fix: Create ZIP files in ESB-NAS subfolder for upload-artifact compat…](/miloshov/ESB-NAS/commit/6e4416a6d07a2877634522420957e1af7c85d3c6) | Jan 17, 2026 |
+| [client\\_launcher.py](/miloshov/ESB-NAS/blob/main/client\_launcher.py) | [client\\_launcher.py](/miloshov/ESB-NAS/blob/main/client\_launcher.py) | [Fix build: use zipfile instead of PowerShell, add version v0.15](/miloshov/ESB-NAS/commit/cc1ba558310ac35aa02eaccbf5ef59064c947e8a) | Jan 17, 2026 |
+| [config.py](/miloshov/ESB-NAS/blob/main/config.py) | [config.py](/miloshov/ESB-NAS/blob/main/config.py) | [Add standalone Windows executable build support](/miloshov/ESB-NAS/commit/3fa3638955ad52ca534e36422a8680bef619c92c) | Jan 16, 2026 |
+| [esb-nas.spec](/miloshov/ESB-NAS/blob/main/esb-nas.spec) | [esb-nas.spec](/miloshov/ESB-NAS/blob/main/esb-nas.spec) | [Fix: Use --onedir mode for proper DLL inclusion](/miloshov/ESB-NAS/commit/f07d8af6c3f67cb0baa31b6384836abd460d9fd5) | Jan 16, 2026 |
+| [hook-runtime.py](/miloshov/ESB-NAS/blob/main/hook-runtime.py) | [hook-runtime.py](/miloshov/ESB-NAS/blob/main/hook-runtime.py) | [Fix: Use --onedir mode for proper DLL inclusion](/miloshov/ESB-NAS/commit/f07d8af6c3f67cb0baa31b6384836abd460d9fd5) | Jan 16, 2026 |
+| [requirements.txt](/miloshov/ESB-NAS/blob/main/requirements.txt) | [requirements.txt](/miloshov/ESB-NAS/blob/main/requirements.txt) | [Initial commit: ESB-NAS Emergency Notification Alert System](/miloshov/ESB-NAS/commit/6baa9cec930fcc0e259b0db3da5a5d9d35d7e8c3) | Jan 16, 2026 |
+| [run.bat](/miloshov/ESB-NAS/blob/main/run.bat) | [run.bat](/miloshov/ESB-NAS/blob/main/run.bat) | [Fix Flask-Login and blueprint endpoint issues](/miloshov/ESB-NAS/commit/6de016bf864848b6bd859fe0e85b96ddd6e903bf) | Jan 16, 2026 |
+| [run.py](/miloshov/ESB-NAS/blob/main/run.py) | [run.py](/miloshov/ESB-NAS/blob/main/run.py) | [Fix build: use zipfile instead of PowerShell, add version v0.15](/miloshov/ESB-NAS/commit/cc1ba558310ac35aa02eaccbf5ef59064c947e8a) | Jan 17, 2026 |
+| View all files |
+## Repository files navigation
+\* [README](#)
+# ESB-NAS (Emergency Notification Alert System)
+A standalone web application for sending urgent emergency alerts to multiple channels simultaneously via Email, SMS, Telegram, and Slack.
+## 🚀 Quick Start - Download Standalone .exe
+\*\*No Python required!\*\* Download the ready-to-use Windows executable:
+1. Go to [Releases](https://github.com/miloshov/ESB-NAS/releases)
+2. Download the latest `ESB-NAS-Windows.exe`
+3. Extract and run!
+## Features
+\* 🚨 \*\*Instant Alert Broadcasting\*\* - Send emergency messages with a single click
+\* 📧 \*\*Multi-Channel Delivery\*\* - Email, SMS, Telegram, and Slack support
+\* 🌐 \*\*Multi-Language Support\*\* - English, Ukrainian, Serbian, and Bulgarian
+\* 🌓 \*\*Dark/Light Theme\*\* - Easy on the eyes in any environment
+\* 👥 \*\*Recipient Management\*\* - Add and manage notification recipients
+\* 📝 \*\*Template System\*\* - Pre-configured alert templates for quick deployment
+\* 🔒 \*\*Admin Security\*\* - Password-protected admin panel
+\* 📊 \*\*Activity Logging\*\* - Track all sent alerts and their status
+\* 🏠 \*\*Standalone Operation\*\* - Runs on local network, no cloud dependencies
+## Getting Started
+### Option 1: Download Standalone Executable (Recommended)
+1. Download `ESB-NAS-Windows.exe` from [Releases](https://github.com/miloshov/ESB-NAS/releases)
+2. Extract the ZIP file
+3. Double-click `ESB-NAS.exe` to run
+4. Open browser at `http://localhost:5000`
+5. Login with: `admin` / `admin123`
+### Option 2: Run with Python (For Development)
+```
+git clone https://github.com/miloshov/ESB-NAS.git
+cd ESB-NAS
+pip install -r requirements.txt
+python run.py
+```
+Then access at 
+## Default Login
+\* \*\*Username:\*\* admin
+\* \*\*Password:\*\* admin123
+⚠️\*\*Change the default password on first login!\*\*
+## Building Standalone Executable
+To build the Windows .exe yourself:
+1. Install Python 3.10+ from 
+2. Open Command Prompt in the ESB-NAS folder
+3. Run: `build.bat`
+4. The executable will be in `dist\ESB-NAS.exe`
+Or use the automated build: push to main branch and download from [Releases](https://github.com/miloshov/ESB-NAS/releases)
+## Configuration
+### Email Integration (SMTP)
+Configure your email provider in Admin → Integrations:
+| Parameter | Description | Example |
+| --- | --- | --- |
+| SMTP Host | Email server hostname | smtp.gmail.com |
+| SMTP Port | Server port (usually 587) | 587 |
+| SMTP Username | Your email address | [your@email.com](mailto:your@email.com) |
+| SMTP Password | App token or password | \\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\* |
+| From Email | Sender email address | [alerts@company.com](mailto:alerts@company.com) |
+### SMS Integration (Twilio)
+1. Create a Twilio account at 
+2. Get your Account SID and Auth Token
+3. Purchase a phone number
+4. Configure in Admin → Integrations:
+| Parameter | Description | Example |
+| --- | --- | --- |
+| Account SID | Twilio account identifier | ACxxxxxxxxxxxxxxxx |
+| Auth Token | Twilio authentication token | \\*\\*\\*\\*\\*\\*\\*\\*\\*\\*\\* |
+| From Number | Your Twilio phone number | +1234567890 |
+### Telegram Integration
+1. Message @BotFather on Telegram
+2. Create a new bot with /newbot command
+3. Get your Bot Token
+4. Get your Chat ID (message @userinfobot)
+5. Configure in Admin → Integrations:
+| Parameter | Description | Example |
+| --- | --- | --- |
+| Bot Token | Telegram bot token | 123456:ABC-DEF... |
+| Default Chat ID | Default recipient chat ID | 123456789 |
+### Slack Integration
+1. Create a Slack App at 
+2. Enable Incoming Webhooks
+3. Create a webhook for your channel
+4. Configure in Admin → Integrations:
+| Parameter | Description | Example |
+| --- | --- | --- |
+| Webhook URL | Slack incoming webhook URL | ... |
+## Usage
+### Sending an Alert
+1. Open the main page
+2. Select an alert template from the dropdown
+3. Review the number of active recipients
+4. Press the red ALERT button
+5. Confirm the action
+### Managing Templates
+In Admin → Templates, you can:
+\* Add new alert templates
+\* Edit existing templates
+\* Set severity level (Info, Warning, Critical)
+\* Enable/disable templates
+\* Delete templates
+### Managing Recipients
+In Admin → Recipients, you can:
+\* Add recipients with their contact information
+\* Specify which channels each recipient should receive alerts on
+\* Enable/disable recipients
+\* Delete recipients
+## Project Structure
+```
+ESB-NAS/
+├── app/
+│ ├── \_\_init\_\_.py # Application factory
+│ ├── models.py # Database models
+│ ├── routes/
+│ │ ├── main.py # Main routes (home, send alert)
+│ │ └── admin.py # Admin routes
+│ ├── services/
+│ │ ├── email\_service.py # Email sending logic
+│ │ ├── sms\_service.py # SMS sending logic
+│ │ ├── telegram\_service.py
+│ │ └── slack\_service.py
+│ ├── static/
+│ │ ├── css/style.css # Styling
+│ │ └── js/app.js # Frontend JavaScript
+│ └── templates/ # HTML templates
+├── database/ # SQLite database storage
+├── translations/ # Language files
+├── .github/workflows/ # CI/CD for auto-build
+├── esb-nas.spec # PyInstaller configuration
+├── build.bat # Windows build script
+├── config.py # Configuration
+├── run.py # Application entry point
+├── run.bat # Windows launcher
+└── requirements.txt # Python dependencies
+```
+## Deployment
+### Local Network
+The application is accessible from all devices on the same network:
+\* Local access: `http://localhost:5000`
+\* Network access: `http://[SERVER\_IP]:5000`
+### Production Deployment
+For production use, consider:
+1. \*\*Use a production WSGI server:\*\* The standalone executable uses Waitress by default
+2. \*\*Set environment variables:\*\*
+```
+export SECRET\_KEY='your-secure-random-key'
+```
+3. \*\*Consider a reverse proxy\*\* (Nginx, Apache) for SSL termination
+## API Endpoints
+### Main Routes
+\* `GET /` - Main alert page
+\* `POST /send-alert` - Send alert notification
+\* `POST /set-language` - Set interface language
+\* `POST /set-theme` - Set theme (dark/light)
+\* `GET /login` - Admin login page
+\* `POST /login` - Login submission
+\* `GET /logout` - Logout
+### Admin Routes
+\* `GET /admin/` - Dashboard
+\* `GET /admin/templates` - Template management
+\* `POST /admin/templates` - Add/edit/delete templates
+\* `GET /admin/recipients` - Recipient management
+\* `POST /admin/recipients` - Add/edit/delete recipients
+\* `GET /admin/integrations` - Integration configuration
+\* `POST /admin/integrations` - Save integration settings
+\* `GET /admin/test` - Integration testing page
+\* `POST /admin/test` - Test integration
+\* `POST /admin/change-password` - Change admin password
+## Security Considerations
+1. \*\*Change default credentials\*\* immediately after first login
+2. \*\*Use strong passwords\*\* for the admin account
+3. \*\*Keep API keys secure\*\* - don't share them
+4. \*\*Run on secure networks\*\* when possible
+5. \*\*Consider HTTPS\*\* for production deployments
+6. \*\*Restrict access\*\* to the admin panel if needed
+## Troubleshooting
+### Port already in use
+Windows:
+```
+netstat -ano |findstr :5000
+taskkill /PID  /F
+```
+### Database issues
+Delete the database file:
+```
+del database\esb\_nas.db
+ESB-NAS.exe
+```
+### Integration not working
+1. Check integration settings in Admin → Integrations
+2. Verify API keys and tokens are correct
+3. Test integrations using Admin → Test page
+4. Check console logs for error messages
+## License
+This project is open source and available under the MIT License.
+## Support
+For issues and feature requests, please open an issue on GitHub.
+## About
+Emergency Notification Alert System - Standalone application for sending urgent messages via Email, SMS, Telegram, and Slack
+### Resources
+[Readme](#readme-ov-file)
+### Uh oh!
+There was an error while loading. Please reload this page.
+[Activity](/miloshov/ESB-NAS/activity)
+### Stars
+[\*\*0\*\*
+stars](/miloshov/ESB-NAS/stargazers)
+### Watchers
+[\*\*0\*\*
+watching](/miloshov/ESB-NAS/watchers)
+### Forks
+[\*\*0\*\*
+forks](/miloshov/ESB-NAS/forks)
+[Report repository](/contact/report-content?content\_url=https%3A%2F%2Fgithub.com%2Fmiloshov%2FESB-NAS&report=miloshov+%28user%29)
+## [Releases](/miloshov/ESB-NAS/releases)
+No releases published
+## [Packages 0](/users/miloshov/packages?repo\_name=ESB-NAS)
+No packages published
+## Languages
+\* [HTML49.5%](/miloshov/ESB-NAS/search?l=html)
+\* [Python34.4%](/miloshov/ESB-NAS/search?l=python)
+\* [JavaScript7.3%](/miloshov/ESB-NAS/search?l=javascript)
+\* [CSS7.2%](/miloshov/ESB-NAS/search?l=css)
+\* [Batchfile1.6%](/miloshov/ESB-NAS/search?l=batchfile)
+## Footer
+© 2026 GitHub, Inc.
+### Footer navigation
+\* [Terms](https://docs.github.com/site-policy/github-terms/github-terms-of-service)
+\* [Privacy](https://docs.github.com/site-policy/privacy-policies/github-privacy-statement)
+\* [Security](https://github.com/security)
+\* [Status](https://www.githubstatus.com/)
+\* [Community](https://github.community/)
+\* [Docs](https://docs.github.com/)
+\* [Contact](https://support.github.com?tags=dotcom-footer)
+\* Manage cookies
+\* Do not share my personal information
+You can’t perform that action at this time.

@@ -1,0 +1,199 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="admin-layout">
+    <aside class="admin-sidebar">
+        <div style="padding: 0 20px; margin-bottom: 20px;">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                ESB-NAS
+            </div>
+        </div>
+        
+        <nav>
+            <ul class="sidebar-nav">
+                <li><a href="{{ url_for('admin.dashboard') }}">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                    </svg>
+                    <span>Dashboard</span>
+                </a></li>
+                <li><a href="{{ url_for('admin.templates') }}">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                    </svg>
+                    <span>Templates</span>
+                </a></li>
+                <li><a href="{{ url_for('admin.recipients') }}">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                    </svg>
+                    <span>Recipients</span>
+                </a></li>
+                <li><a href="{{ url_for('admin.integrations') }}">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.01 2C6.49 2 2 6.49 2 12.01s4.49 10.01 10.01 10.01S22.03 17.53 22.03 12.01 17.53 2 12.01 2zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                    <span>Integrations</span>
+                </a></li>
+                <li><a href="{{ url_for('admin.test') }}">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                    </svg>
+                    <span>Test</span>
+                </a></li>
+                <li><a href="#" onclick="openModal('password-modal'); return false;">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                    </svg>
+                    <span>Settings</span>
+                </a></li>
+                <li><a href="{{ url_for('main.logout') }}">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"/>
+                    </svg>
+                    <span>Logout</span>
+                </a></li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <main class="admin-content">
+        <div class="card">
+            <div class="card-header">
+                <h2>Telegram Direct Test</h2>
+            </div>
+            <div class="card-body">
+                <p style="color: var(--text-secondary); margin-bottom: 20px;">
+                    Test Telegram directly without saving to database. Use this to verify your bot token and chat ID.
+                </p>
+                
+                <form id="telegram-test-form">
+                    <div class="form-group">
+                        <label class="form-label">Bot Token *</label>
+                        <input type="text" class="form-input" id="bot_token" 
+                               placeholder="123456789:ABCdefGHIjklMNOpqrsTUVwxyz" required>
+                        <small style="color: var(--text-secondary);">
+                            Get token from @BotFather on Telegram
+                        </small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Chat ID *</label>
+                        <input type="text" class="form-input" id="chat_id" 
+                               placeholder="-1001234567890 or 123456789" required>
+                        <small style="color: var(--text-secondary);">
+                            For groups: use @myidbot to get correct group ID (starts with -100)<br>
+                            For personal: your Telegram user ID (get from @userinfobot)
+                        </small>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="form-label">Test Message</label>
+                        <textarea class="form-input" id="test_message" rows="3" 
+                                  placeholder="Test message from ESB-NAS">Test message from ESB-NAS</textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary" id="test-btn">
+                        Send Test Message
+                    </button>
+                </form>
+                
+                <div id="test-result" style="margin-top: 20px;"></div>
+            </div>
+        </div>
+        
+        <div class="card" style="margin-top: 20px;">
+            <div class="card-header">
+                <h2>How to Get Correct Chat ID</h2>
+            </div>
+            <div class="card-body">
+                <div style="line-height: 1.8;">
+                    <p><strong>For Groups:</strong></p>
+                    <ol style="padding-left: 20px;">
+                        <li>Add your bot to the group</li>
+                        <li>Send a message in the group: <code>@myidbot /getgroupid@myidbot</code></li>
+                        <li>Bot will reply with the group ID (format: -100xxxxxxxxxx)</li>
+                    </ol>
+                    
+                    <p style="margin-top: 15px;"><strong>For Personal Chat:</strong></p>
+                    <ol style="padding-left: 20px;">
+                        <li>Open chat with your bot</li>
+                        <li>Send any message to the bot</li>
+                        <li>Visit: <code>https://api.telegram.org/bot&lt;YOUR_TOKEN&gt;/getUpdates</code></li>
+                        <li>Look for <code>"chat":{"id":123456789,...}</code></li>
+                    </ol>
+                    
+                    <p style="margin-top: 15px;"><strong>Common Errors:</strong></p>
+                    <ul style="padding-left: 20px;">
+                        <li><code>chat not found</code> - Bot not in group, or wrong chat ID</li>
+                        <li><code>bot was blocked by user</code> - User blocked the bot</li>
+                        <li><code>invalid bot token</code> - Token is wrong</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+
+<script>
+document.getElementById('telegram-test-form').addEventListener('submit', async function(e) {
+    e.preventDefault();
+    
+    const btn = document.getElementById('test-btn');
+    const result = document.getElementById('test-result');
+    
+    btn.disabled = true;
+    btn.textContent = 'Testing...';
+    result.innerHTML = '<div class="loading">Sending test message...</div>';
+    
+    const data = {
+        bot_token: document.getElementById('bot_token').value,
+        chat_id: document.getElementById('chat_id').value,
+        message: document.getElementById('test_message').value
+    };
+    
+    try {
+        const response = await fetch('/admin/test-telegram-direct', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(data)
+        });
+        
+        const resultData = await response.json();
+        
+        if (resultData.success) {
+            result.innerHTML = `
+                <div class="success-message">
+                    <strong>✓ SUCCESS!</strong><br>
+                    Bot: ${resultData.bot_name}<br>
+                    Message sent to chat ${resultData.chat_id_used}
+                </div>
+            `;
+        } else {
+            result.innerHTML = `
+                <div class="error-message">
+                    <strong>✗ FAILED</strong><br>
+                    ${resultData.message}<br>
+                    ${resultData.tip ? '<br><em>Tip: ' + resultData.tip + '</em>' : ''}
+                </div>
+            `;
+        }
+    } catch (error) {
+        result.innerHTML = `
+            <div class="error-message">
+                <strong>Error</strong><br>
+                ${error.message}
+            </div>
+        `;
+    }
+    
+    btn.disabled = false;
+    btn.textContent = 'Send Test Message';
+});
+</script>
+{% endblock %}

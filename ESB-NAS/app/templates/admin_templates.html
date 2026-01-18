@@ -1,0 +1,249 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="admin-layout">
+    <aside class="admin-sidebar">
+        <div style="padding: 0 20px; margin-bottom: 20px;">
+            <div class="logo">
+                <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor">
+                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+                ESB-NAS
+            </div>
+        </div>
+        
+        <nav>
+            <ul class="sidebar-nav">
+                <li><a href="{{ url_for('admin.dashboard') }}">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/>
+                    </svg>
+                    <span>Dashboard</span>
+                </a></li>
+                <li><a href="{{ url_for('admin.templates') }}" class="active">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/>
+                    </svg>
+                    <span>Templates</span>
+                </a></li>
+                <li><a href="{{ url_for('admin.recipients') }}">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5z"/>
+                    </svg>
+                    <span>Recipients</span>
+                </a></li>
+                <li><a href="{{ url_for('admin.integrations') }}">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12.01 2C6.49 2 2 6.49 2 12.01s4.49 10.01 10.01 10.01S22.03 17.53 22.03 12.01 17.53 2 12.01 2zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm0-6c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"/>
+                    </svg>
+                    <span>Integrations</span>
+                </a></li>
+                <li><a href="{{ url_for('admin.test') }}">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M9.4 16.6L4.8 12l4.6-4.6L8 6l-6 6 6 6 1.4-1.4zm5.2 0l4.6-4.6-4.6-4.6L16 6l6 6-6 6-1.4-1.4z"/>
+                    </svg>
+                    <span>Test</span>
+                </a></li>
+                <li><a href="#" onclick="openModal('password-modal'); return false;">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/>
+                    </svg>
+                    <span>Settings</span>
+                </a></li>
+                <li><a href="{{ url_for('main.logout') }}">
+                    <svg style="width: 20px; height: 20px;" viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M17 7l-1.41 1.41L18.17 11H8v2h10.17l-2.58 2.58L17 17l5-5zM4 5h8V3H4c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h8v-2H4V5z"/>
+                    </svg>
+                    <span>Logout</span>
+                </a></li>
+            </ul>
+        </nav>
+    </aside>
+    
+    <main class="admin-content">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 30px;">
+            <h1>Template Management</h1>
+            <button class="btn btn-primary" onclick="openModal('template-modal')">+ Add Template</button>
+        </div>
+        
+        <div class="card">
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Content Preview</th>
+                            <th>Severity</th>
+                            <th>Status</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for template in templates %}
+                        <tr>
+                            <td><strong>{{ template.title }}</strong></td>
+                            <td>{{ template.content[:50] }}...</td>
+                            <td>
+                                <span class="badge badge-{{ 'danger' if template.severity == 'critical' else 'warning' if template.severity == 'warning' else 'info' }}">
+                                    {{ template.severity }}
+                                </span>
+                            </td>
+                            <td>
+                                <span class="badge badge-{{ 'success' if template.is_active else 'danger' }}">
+                                    {{ 'Active' if template.is_active else 'Inactive' }}
+                                </span>
+                            </td>
+                            <td style="white-space: nowrap;">
+                                <button class="btn btn-sm btn-secondary" style="margin-right: 8px;" 
+                                        data-edit="{{ template.id }}" 
+                                        data-title="{{ template.title }}" 
+                                        data-content="{{ template.content }}" 
+                                        data-severity="{{ template.severity }}">
+                                    Edit
+                                </button>
+                                <form action="{{ url_for('admin.toggle_template', template_id=template.id) }}" method="POST" style="display: inline;">
+                                    <button type="submit" class="btn btn-sm btn-{{ 'outline' if template.is_active else 'primary' }}" style="margin-right: 8px;">
+                                        {{ 'Deactivate' if template.is_active else 'Activate' }}
+                                    </button>
+                                </form>
+                                <button class="btn btn-sm btn-outline" style="margin-right: 8px;" 
+                                        data-delete-url="{{ url_for('admin.delete_template', template_id=template.id) }}"
+                                        data-delete-name="{{ template.title }}">
+                                    Delete
+                                </button>
+                            </td>
+                        </tr>
+                        {% else %}
+                        <tr>
+                            <td colspan="5" style="text-align: center; padding: 40px;">
+                                No templates yet. Create your first template!
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</div>
+
+<!-- Add/Edit Template Modal -->
+<div class="modal" id="template-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 id="template-modal-title">Add Template</h2>
+            <button class="modal-close" onclick="closeModal('template-modal')">&times;</button>
+        </div>
+        
+        <form method="POST">
+            <input type="hidden" name="action" value="add" id="template-action">
+            <input type="hidden" name="template_id" id="template-id">
+            
+            <div class="form-group">
+                <label class="form-label">Title</label>
+                <input type="text" class="form-input" name="title" id="template-title" required placeholder="e.g., Fire Alarm">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Content</label>
+                <textarea class="form-input" name="content" id="template-content" rows="5" required placeholder="Enter alert message content..."></textarea>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Severity</label>
+                <select class="form-select" name="severity" id="template-severity">
+                    <option value="info">Info</option>
+                    <option value="warning">Warning</option>
+                    <option value="critical">Critical</option>
+                </select>
+            </div>
+            
+            <div style="display: flex; gap: 10px; justify-content: flex-end;">
+                <button type="button" class="btn btn-secondary" onclick="closeModal('template-modal')">Cancel</button>
+                <button type="submit" class="btn btn-primary">Save Template</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Password Modal -->
+<div class="modal" id="password-modal">
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2>Change Password</h2>
+            <button class="modal-close" onclick="closeModal('password-modal')">&times;</button>
+        </div>
+        
+        <form method="POST" action="{{ url_for('admin.change_password') }}">
+            <div class="form-group">
+                <label class="form-label">Current Password</label>
+                <input type="password" class="form-input" name="current_password" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">New Password</label>
+                <input type="password" class="form-input" name="new_password" required>
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label">Confirm New Password</label>
+                <input type="password" class="form-input" name="confirm_password" required>
+            </div>
+            
+            <div style="display: flex; gap: 10px; justify-content: flex-end;">
+                <button type="button" class="btn btn-secondary" onclick="closeModal('password-modal')">Cancel</button>
+                <button type="submit" class="btn btn-primary">Change Password</button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div class="toast-container"></div>
+
+<script>
+    // Handle edit buttons using data attributes
+    document.querySelectorAll('[data-edit]').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const id = this.dataset.edit;
+            const title = this.dataset.title;
+            const content = this.dataset.content;
+            const severity = this.dataset.severity;
+            
+            document.getElementById('template-modal-title').textContent = 'Edit Template';
+            document.getElementById('template-action').value = 'edit';
+            document.getElementById('template-id').value = id;
+            document.getElementById('template-title').value = title;
+            document.getElementById('template-content').value = content;
+            document.getElementById('template-severity').value = severity;
+            openModal('template-modal');
+        });
+    });
+    
+    // Handle delete buttons using data attributes
+    document.querySelectorAll('[data-delete-url]').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const url = this.dataset.deleteUrl;
+            const name = this.dataset.deleteName;
+            const message = `Are you sure you want to delete "${name}"?`;
+            if (confirm(message)) {
+                // Create and submit a form for delete
+                const form = document.createElement('form');
+                form.method = 'POST';
+                form.action = url;
+                document.body.appendChild(form);
+                form.submit();
+            }
+        });
+    });
+    
+    // Reset form when opening for add
+    document.querySelector('button[onclick="openModal(\'template-modal\')"]').addEventListener('click', function() {
+        document.getElementById('template-modal-title').textContent = 'Add Template';
+        document.getElementById('template-action').value = 'add';
+        document.getElementById('template-id').value = '';
+        document.getElementById('template-title').value = '';
+        document.getElementById('template-content').value = '';
+        document.getElementById('template-severity').value = 'warning';
+    });
+</script>
+{% endblock %}

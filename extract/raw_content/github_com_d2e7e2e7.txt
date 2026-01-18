@@ -1,0 +1,609 @@
+# Source URL: https://github.com/miloshov/ESB-NAS/commit/953c74c37c92d3e6a9c8b0c05e6b3f5af3687b21
+# Content Length: 25269 characters
+# Extracted at: 2026-01-18 19:31:27
+#============================================================
+
+Fix SMS recipient issue: normalize phone numbers and add logging · miloshov/ESB-NAS@953c74c · GitHub
+[Skip to content](#start-of-content)
+## Navigation Menu
+Toggle navigation
+[Sign in](/login?return\_to=https%3A%2F%2Fgithub.com%2Fmiloshov%2FESB-NAS%2Fcommit%2F953c74c37c92d3e6a9c8b0c05e6b3f5af3687b21)
+Appearance settings
+\* Platform
++ AI CODE CREATION
+- [GitHub CopilotWrite better code with AI](https://github.com/features/copilot)
+- [GitHub SparkBuild and deploy intelligent apps](https://github.com/features/spark)
+- [GitHub ModelsManage and compare prompts](https://github.com/features/models)
+- [MCP RegistryNewIntegrate external tools](https://github.com/mcp)
++ DEVELOPER WORKFLOWS
+- [ActionsAutomate any workflow](https://github.com/features/actions)
+- [CodespacesInstant dev environments](https://github.com/features/codespaces)
+- [IssuesPlan and track work](https://github.com/features/issues)
+- [Code ReviewManage code changes](https://github.com/features/code-review)
++ APPLICATION SECURITY
+- [GitHub Advanced SecurityFind and fix vulnerabilities](https://github.com/security/advanced-security)
+- [Code securitySecure your code as you build](https://github.com/security/advanced-security/code-security)
+- [Secret protectionStop leaks before they start](https://github.com/security/advanced-security/secret-protection)
++ EXPLORE
+- [Why GitHub](https://github.com/why-github)
+- [Documentation](https://docs.github.com)
+- [Blog](https://github.blog)
+- [Changelog](https://github.blog/changelog)
+- [Marketplace](https://github.com/marketplace)
+[View all features](https://github.com/features)
+\* Solutions
++ BY COMPANY SIZE
+- [Enterprises](https://github.com/enterprise)
+- [Small and medium teams](https://github.com/team)
+- [Startups](https://github.com/enterprise/startups)
+- [Nonprofits](https://github.com/solutions/industry/nonprofits)
++ BY USE CASE
+- [App Modernization](https://github.com/solutions/use-case/app-modernization)
+- [DevSecOps](https://github.com/solutions/use-case/devsecops)
+- [DevOps](https://github.com/solutions/use-case/devops)
+- [CI/CD](https://github.com/solutions/use-case/ci-cd)
+- [View all use cases](https://github.com/solutions/use-case)
++ BY INDUSTRY
+- [Healthcare](https://github.com/solutions/industry/healthcare)
+- [Financial services](https://github.com/solutions/industry/financial-services)
+- [Manufacturing](https://github.com/solutions/industry/manufacturing)
+- [Government](https://github.com/solutions/industry/government)
+- [View all industries](https://github.com/solutions/industry)
+[View all solutions](https://github.com/solutions)
+\* Resources
++ EXPLORE BY TOPIC
+- [AI](https://github.com/resources/articles?topic=ai)
+- [Software Development](https://github.com/resources/articles?topic=software-development)
+- [DevOps](https://github.com/resources/articles?topic=devops)
+- [Security](https://github.com/resources/articles?topic=security)
+- [View all topics](https://github.com/resources/articles)
++ EXPLORE BY TYPE
+- [Customer stories](https://github.com/customer-stories)
+- [Events & webinars](https://github.com/resources/events)
+- [Ebooks & reports](https://github.com/resources/whitepapers)
+- [Business insights](https://github.com/solutions/executive-insights)
+- [GitHub Skills](https://skills.github.com)
++ SUPPORT & SERVICES
+- [Documentation](https://docs.github.com)
+- [Customer support](https://support.github.com)
+- [Community forum](https://github.com/orgs/community/discussions)
+- [Trust center](https://github.com/trust-center)
+- [Partners](https://github.com/partners)
+\* Open Source
++ COMMUNITY
+- [GitHub SponsorsFund open source developers](https://github.com/sponsors)
++ PROGRAMS
+- [Security Lab](https://securitylab.github.com)
+- [Maintainer Community](https://maintainers.github.com)
+- [Accelerator](https://github.com/accelerator)
+- [Archive Program](https://archiveprogram.github.com)
++ REPOSITORIES
+- [Topics](https://github.com/topics)
+- [Trending](https://github.com/trending)
+- [Collections](https://github.com/collections)
+\* Enterprise
++ ENTERPRISE SOLUTIONS
+- [Enterprise platformAI-powered developer platform](https://github.com/enterprise)
++ AVAILABLE ADD-ONS
+- [GitHub Advanced SecurityEnterprise-grade security features](https://github.com/security/advanced-security)
+- [Copilot for BusinessEnterprise-grade AI features](https://github.com/features/copilot/copilot-business)
+- [Premium SupportEnterprise-grade 24/7 support](https://github.com/premium-support)
+\* [Pricing](https://github.com/pricing)
+Search or jump to...
+# Search code, repositories, users, issues, pull requests...
+Search
+Clear
+[Search syntax tips](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax)
+# Provide feedback
+We read every piece of feedback, and take your input very seriously.
+Include my email address so I can be contacted
+Cancel
+Submit feedback
+# Saved searches
+## Use saved searches to filter your results more quickly
+Name
+Query
+To see all available qualifiers, see our [documentation](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax).
+Cancel
+Create saved search
+[Sign in](/login?return\_to=https%3A%2F%2Fgithub.com%2Fmiloshov%2FESB-NAS%2Fcommit%2F953c74c37c92d3e6a9c8b0c05e6b3f5af3687b21)
+[Sign up](/signup?ref\_cta=Sign+up&ref\_loc=header+logged+out&ref\_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fcommit%2Fshow&source=header-repo&source\_repo=miloshov%2FESB-NAS)
+Appearance settings
+Resetting focus
+You signed in with another tab or window. Reload to refresh your session.You signed out in another tab or window. Reload to refresh your session.You switched accounts on another tab or window. Reload to refresh your session.Dismiss alert
+[miloshov](/miloshov)/\*\*[ESB-NAS](/miloshov/ESB-NAS)\*\*Public
+\* [Notifications](/login?return\_to=%2Fmiloshov%2FESB-NAS)You must be signed in to change notification settings
+\* [Fork
+0](/login?return\_to=%2Fmiloshov%2FESB-NAS)
+\* [Star
+0](/login?return\_to=%2Fmiloshov%2FESB-NAS)
+\* [Code](/miloshov/ESB-NAS)
+\* [Issues0](/miloshov/ESB-NAS/issues)
+\* [Pull requests0](/miloshov/ESB-NAS/pulls)
+\* [Actions](/miloshov/ESB-NAS/actions)
+\* [Projects0](/miloshov/ESB-NAS/projects)
+\* [Security](/miloshov/ESB-NAS/security)
+[### Uh oh!](/miloshov/ESB-NAS/security)
+[There was an error while loading.](/miloshov/ESB-NAS/security) Please reload this page.
+\* [Insights](/miloshov/ESB-NAS/pulse)
+Additional navigation options
+\* [Code](/miloshov/ESB-NAS)
+\* [Issues](/miloshov/ESB-NAS/issues)
+\* [Pull requests](/miloshov/ESB-NAS/pulls)
+\* [Actions](/miloshov/ESB-NAS/actions)
+\* [Projects](/miloshov/ESB-NAS/projects)
+\* [Security](/miloshov/ESB-NAS/security)
+\* [Insights](/miloshov/ESB-NAS/pulse)
+# Commit 953c74c
+[Browse files](/miloshov/ESB-NAS/tree/953c74c37c92d3e6a9c8b0c05e6b3f5af3687b21)Browse files
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=40)
+Miloshov
+committedJan 17, 2026·1 / 1
+Fix SMS recipient issue: normalize phone numbers and add logging
+[main](/miloshov/ESB-NAS/compare/main)
+```
+1 parent 1555acd commit 953c74c
+Copy full SHA for 953c74c
+```
+## File tree
+Expand file treeCollapse file tree
+## 5 files changed
++305
+-13
+lines changed
+TopOpen diff view settings
+Filter options
+\* app
++ [\\_\\_init\\_\\_.py](#diff-9cec7b11237bc29d77a439e81c9b7acfac003d8e8855731eb6bc130b5a8ce602)
++ routes
+- [admin.py](#diff-1948749695041af8e9ecab0d1133c6d2498828a1f7df1320a29c034246eb2984)
+- [main.py](#diff-1b9d1390d929b645e333ceebc6fa74ab7469edeab21487f91cceafc908f22bd8)
++ services
+- [slack\\_service.py](#diff-18c4932a50871582669056f74c813f45374b383102951580a611eb1330dfb1eb)
+- [sms\\_service.py](#diff-af9408f914dc830693d160bc493564ac0b7fe95463878936b2e4654d31bc2919)
+Expand file treeCollapse file tree
+## 5 files changed
++305
+-13
+lines changed
+Open diff view settings
+Collapse file
+### [`‎app/\_\_init\_\_.py‎`](#diff-9cec7b11237bc29d77a439e81c9b7acfac003d8e8855731eb6bc130b5a8ce602)
+Copy file name to clipboardExpand all lines: app/\\_\\_init\\_\\_.py
++5Lines changed: 5 additions & 0 deletions
+| Original file line number | Diff line number | Diff line change |
+| --- | --- | --- |
+| `@@ -5,12 +5,17 @@` |
+| `5` | `5` | `importjson` |
+| `6` | `6` | `importsys` |
+| `7` | `7` | `importos` |
+| `8` | `+ importlogging` |
+| `8` | `9` |
+| `9` | `10` | `db=SQLAlchemy()` |
+| `10` | `11` | `login\_manager=LoginManager()` |
+| `11` | `12` | `login\_manager.login\_view='main.login'` |
+| `12` | `13` | `login\_manager.login\_message\_category='info'` |
+| `13` | `14` |
+| `15` | `+ # Configure logging` |
+| `16` | `+ logging.basicConfig(level=logging.INFO)` |
+| `17` | `+ logger=logging.getLogger(\_\_name\_\_)` |
+| `18` | `+` |
+| `14` | `19` |
+| `15` | `20` | `@login\_manager.user\_loader` |
+| `16` | `21` | `defload\_user(user\_id):` |
+Collapse file
+### [`‎app/routes/admin.py‎`](#diff-1948749695041af8e9ecab0d1133c6d2498828a1f7df1320a29c034246eb2984)
+Copy file name to clipboardExpand all lines: app/routes/admin.py
++4-1Lines changed: 4 additions & 1 deletion
+| Original file line number | Diff line number | Diff line change |
+| --- | --- | --- |
+| `@@ -174,8 +174,11 @@ def integrations():` |
+| `174` | `174` | `}` |
+| `175` | `175` | `elifservice\_type=='slack':` |
+| `176` | `176` | `config= {` |
+| `177` | `- 'webhook\_url': request.form.get('webhook\_url')` |
+| `177` | `+ 'webhook\_url': request.form.get('webhook\_url') orNone,` |
+| `178` | `+ 'bot\_token': request.form.get('bot\_token') orNone` |
+| `178` | `179` | `}` |
+| `180` | `+ # Remove None values` |
+| `181` | `+ config= {k: vfork, vinconfig.items() ifv}` |
+| `179` | `182` |
+| `180` | `183` | `integration=Integration.query.filter\_by(service\_type=service\_type).first()` |
+| `181` | `184` | `ifnotintegration:` |
+Collapse file
+### [`‎app/routes/main.py‎`](#diff-1b9d1390d929b645e333ceebc6fa74ab7469edeab21487f91cceafc908f22bd8)
+Copy file name to clipboardExpand all lines: app/routes/main.py
++9-4Lines changed: 9 additions & 4 deletions
+| Original file line number | Diff line number | Diff line change |
+| --- | --- | --- |
+| `@@ -1,6 +1,6 @@` |
+| `1` | `1` | `fromflaskimportBlueprint, render\_template, request, jsonify, session, redirect, url\_for` |
+| `2` | `2` | `fromflask\_loginimportlogin\_user, logout\_user, login\_required, current\_user` |
+| `3` | `- fromappimportdb` |
+| `3` | `+ fromappimportdb, logger` |
+| `4` | `4` | `fromapp.modelsimportTemplate, Recipient` |
+| `5` | `5` | `importjson` |
+| `6` | `6` |
+| `@@ -81,19 +81,24 @@ def send\_alert():` |
+| `81` | `81` | `# Send SMS` |
+| `82` | `82` | `ifsms\_config:` |
+| `83` | `83` | `sms\_settings=json.loads(sms\_config.config\_jsonor'{}')` |
+| `84` | `+ logger.info(f"SMS integration enabled, processing {len([rforrinrecipientsifr.phoneandr.phone.strip()])} recipients with phone numbers")` |
+| `84` | `85` | `forrecipientinrecipients:` |
+| `85` | `- ifrecipient.phone:` |
+| `86` | `+ ifrecipient.phoneandrecipient.phone.strip():` |
+| `87` | `+ phone\_clean=recipient.phone.strip()` |
+| `88` | `+ logger.info(f"Sending SMS to recipient: {recipient.name}, phone: {phone\_clean}")` |
+| `86` | `89` | `try:` |
+| `87` | `90` | `send\_sms(` |
+| `88` | `- recipient.phone,` |
+| `91` | `+ phone\_clean,` |
+| `89` | `92` | `template.title,` |
+| `90` | `93` | `template.content,` |
+| `91` | `94` | `sms\_settings` |
+| `92` | `95` | `)` |
+| `93` | `96` | `results['sms']['sent'] +=1` |
+| `97` | `+ logger.info(f"SMS sent successfully to {phone\_clean}")` |
+| `94` | `98` | `exceptExceptionase:` |
+| `95` | `99` | `results['sms']['failed'] +=1` |
+| `96` | `- results['sms']['errors'].append(f"{recipient.phone}: {str(e)}")` |
+| `100` | `+ results['sms']['errors'].append(f"{phone\_clean}: {str(e)}")` |
+| `101` | `+ logger.error(f"SMS failed to {phone\_clean}: {str(e)}")` |
+| `97` | `102` |
+| `98` | `103` | `# Send Telegram` |
+| `99` | `104` | `iftelegram\_config:` |
+Collapse file
+### [`‎app/services/slack\_service.py‎`](#diff-18c4932a50871582669056f74c813f45374b383102951580a611eb1330dfb1eb)
+Copy file name to clipboard
++256-8Lines changed: 256 additions & 8 deletions
+| Original file line number | Diff line number | Diff line change |
+| --- | --- | --- |
+| `@@ -1,25 +1,273 @@` |
+| `1` | `1` | `importrequests` |
+| `2` | `2` |
+| `3` | `3` |
+| `4` | `- defsend\_slack(channel, message, config):` |
+| `4` | `+ defsend\_slack(channel, message, config, severity='info'):` |
+| `5` | `5` | `"""` |
+| `6` | `- Send message via Slack Incoming Webhook` |
+| `6` | `+ Send message via Slack` |
+| `7` | `+ Supports both Incoming Webhook and Bot Token authentication` |
+| `8` | `+` |
+| `9` | `+ Args:` |
+| `10` | `+ channel: Slack channel (e.g., #alerts)` |
+| `11` | `+ message: Message text to send` |
+| `12` | `+ config: Configuration dict with webhook\_url or bot\_token` |
+| `13` | `+ severity: Alert severity (info, warning, critical) for styling` |
+| `7` | `14` | `"""` |
+| `15` | `+ # Determine authentication method` |
+| `8` | `16` | `webhook\_url=config.get('webhook\_url')` |
+| `17` | `+ bot\_token=config.get('bot\_token')` |
+| `18` | `+` |
+| `19` | `+ ifwebhook\_url:` |
+| `20` | `+ returnsend\_slack\_webhook(webhook\_url, channel, message, severity)` |
+| `21` | `+ elifbot\_token:` |
+| `22` | `+ returnsend\_slack\_api(bot\_token, channel, message, severity)` |
+| `23` | `+ else:` |
+| `24` | `+ raiseValueError("Slack is not configured. Please add webhook\_url or bot\_token in integration settings.")` |
+| `25` | `+` |
+| `26` | `+` |
+| `27` | `+ defsend\_slack\_webhook(webhook\_url, channel, message, severity='info'):` |
+| `28` | `+ """Send message via Slack Incoming Webhook"""` |
+| `9` | `29` |
+| `10` | `- ifnotwebhook\_url:` |
+| `11` | `- raiseValueError("Slack webhook URL is not configured")` |
+| `30` | `+ # Color based on severity` |
+| `31` | `+ colors= {` |
+| `32` | `+ 'info': '#3498db',` |
+| `33` | `+ 'warning': '#f39c12',` |
+| `34` | `+ 'critical': '#e74c3c'` |
+| `35` | `+ }` |
+| `36` | `+ color=colors.get(severity, '#3498db')` |
+| `37` | `+` |
+| `38` | `+ # Emoji based on severity` |
+| `39` | `+ emojis= {` |
+| `40` | `+ 'info': ':information\_source:',` |
+| `41` | `+ 'warning': ':warning:',` |
+| `42` | `+ 'critical': ':rotating\_light:'` |
+| `43` | `+ }` |
+| `44` | `+ emoji=emojis.get(severity, ':information\_source:')` |
+| `12` | `45` |
+| `13` | `46` | `payload= {` |
+| `14` | `47` | `'channel': channel,` |
+| `15` | `- 'text': message,` |
+| `16` | `48` | `'username': 'ESB-NAS Alert',` |
+| `17` | `- 'icon\_emoji': ':rotating\_light:'` |
+| `49` | `+ 'icon\_emoji': emoji,` |
+| `50` | `+ 'attachments': [` |
+| `51` | `+ {` |
+| `52` | `+ 'color': color,` |
+| `53` | `+ 'text': message,` |
+| `54` | `+ 'mrkdwn\_in': ['text']` |
+| `55` | `+ }` |
+| `56` | `+ ]` |
+| `18` | `57` | `}` |
+| `19` | `58` |
+| `20` | `59` | `response=requests.post(webhook\_url, json=payload)` |
+| `21` | `60` |
+| `22` | `- ifresponse.status\_code!=200:` |
+| `23` | `- raiseException(f"Failed to send Slack message: {response.text}")` |
+| `61` | `+ ifresponse.status\_codenotin [200, 204]:` |
+| `62` | `+ error\_info=response.textifresponse.textelse'Unknown error'` |
+| `63` | `+ raiseException(f"Failed to send Slack message: {error\_info}")` |
+| `64` | `+` |
+| `65` | `+ returnTrue` |
+| `66` | `+` |
+| `67` | `+` |
+| `68` | `+ defsend\_slack\_api(bot\_token, channel, message, severity='info'):` |
+| `69` | `+ """` |
+| `70` | `+ Send message via Slack API (Bot Token)` |
+| `71` | `+ Requires channels:write scope` |
+| `72` | `+ """` |
+| `73` | `+ # Color based on severity` |
+| `74` | `+ colors= {` |
+| `75` | `+ 'info': '#3498db',` |
+| `76` | `+ 'warning': '#f39c12',` |
+| `77` | `+ 'critical': '#e74c3c'` |
+| `78` | `+ }` |
+| `79` | `+ color=colors.get(severity, '#3498db')` |
+| `80` | `+` |
+| `81` | `+ # Emoji based on severity` |
+| `82` | `+ emojis= {` |
+| `83` | `+ 'info': ':information\_source:',` |
+| `84` | `+ 'warning': ':warning:',` |
+| `85` | `+ 'critical': ':rotating\_light:'` |
+| `86` | `+ }` |
+| `87` | `+ emoji=emojis.get(severity, ':information\_source:')` |
+| `88` | `+` |
+| `89` | `+ # First, convert channel name to ID if needed` |
+| `90` | `+ channel\_id=channel` |
+| `91` | `+ ifchannel.startswith('#'):` |
+| `92` | `+ channel\_id=get\_channel\_id(bot\_token, channel)` |
+| `93` | `+ ifnotchannel\_id:` |
+| `94` | `+ raiseException(f"Channel {channel} not found or bot doesn't have access")` |
+| `95` | `+` |
+| `96` | `+ url="https://slack.com/api/chat.postMessage"` |
+| `97` | `+ headers= {` |
+| `98` | `+ 'Authorization': f'Bearer {bot\_token}',` |
+| `99` | `+ 'Content-Type': 'application/json'` |
+| `100` | `+ }` |
+| `101` | `+` |
+| `102` | `+ payload= {` |
+| `103` | `+ 'channel': channel\_id,` |
+| `104` | `+ 'text': message,` |
+| `105` | `+ 'username': 'ESB-NAS Alert',` |
+| `106` | `+ 'icon\_emoji': emoji,` |
+| `107` | `+ 'attachments': [` |
+| `108` | `+ {` |
+| `109` | `+ 'color': color,` |
+| `110` | `+ 'text': message,` |
+| `111` | `+ 'mrkdwn\_in': ['text']` |
+| `112` | `+ }` |
+| `113` | `+ ]` |
+| `114` | `+ }` |
+| `115` | `+` |
+| `116` | `+ response=requests.post(url, json=payload, headers=headers)` |
+| `117` | `+ data=response.json()` |
+| `118` | `+` |
+| `119` | `+ ifnotdata.get('ok'):` |
+| `120` | `+ error\_msg=data.get('error', 'Unknown error')` |
+| `121` | `+ raiseException(f"Failed to send Slack message: {error\_msg}")` |
+| `24` | `122` |
+| `25` | `123` | `returnTrue` |
+| `124` | `+` |
+| `125` | `+` |
+| `126` | `+ defget\_channel\_id(bot\_token, channel\_name):` |
+| `127` | `+ """` |
+| `128` | `+ Get Slack channel ID from channel name` |
+| `129` | `+ Returns None if channel not found or no permission` |
+| `130` | `+ """` |
+| `131` | `+ url="https://slack.com/api/conversations.list"` |
+| `132` | `+ headers= {` |
+| `133` | `+ 'Authorization': f'Bearer {bot\_token}'` |
+| `134` | `+ }` |
+| `135` | `+` |
+| `136` | `+ params= {` |
+| `137` | `+ 'types': 'public\_channel,private\_channel',` |
+| `138` | `+ 'limit': 1000` |
+| `139` | `+ }` |
+| `140` | `+` |
+| `141` | `+ try:` |
+| `142` | `+ response=requests.get(url, params=params, headers=headers)` |
+| `143` | `+ data=response.json()` |
+| `144` | `+` |
+| `145` | `+ ifdata.get('ok'):` |
+| `146` | `+ forchannelindata.get('channels', []):` |
+| `147` | `+ ifchannel.get('name') ==channel\_name.lstrip('#'):` |
+| `148` | `+ returnchannel.get('id')` |
+| `149` | `+` |
+| `150` | `+ returnNone` |
+| `151` | `+ exceptException:` |
+| `152` | `+ returnNone` |
+| `153` | `+` |
+| `154` | `+` |
+| `155` | `+ deftest\_slack\_connection(config):` |
+| `156` | `+ """` |
+| `157` | `+ Test Slack connection and return status` |
+| `158` | `+ Returns dict with success status and details` |
+| `159` | `+ """` |
+| `160` | `+ webhook\_url=config.get('webhook\_url')` |
+| `161` | `+ bot\_token=config.get('bot\_token')` |
+| `162` | `+` |
+| `163` | `+ ifwebhook\_url:` |
+| `164` | `+ returntest\_slack\_webhook(webhook\_url)` |
+| `165` | `+ elifbot\_token:` |
+| `166` | `+ returntest\_slack\_api(bot\_token)` |
+| `167` | `+ else:` |
+| `168` | `+ return {` |
+| `169` | `+ 'success': False,` |
+| `170` | `+ 'message': 'Slack is not configured. Please add webhook\_url or bot\_token.'` |
+| `171` | `+ }` |
+| `172` | `+` |
+| `173` | `+` |
+| `174` | `+ deftest\_slack\_webhook(webhook\_url):` |
+| `175` | `+ """Test Incoming Webhook"""` |
+| `176` | `+ try:` |
+| `177` | `+ payload= {` |
+| `178` | `+ 'text': 'Test message from ESB-NAS',` |
+| `179` | `+ 'username': 'ESB-NAS Test',` |
+| `180` | `+ 'icon\_emoji': ':white\_check\_mark:'` |
+| `181` | `+ }` |
+| `182` | `+` |
+| `183` | `+ response=requests.post(webhook\_url, json=payload)` |
+| `184` | `+` |
+| `185` | `+ ifresponse.status\_codein [200, 204]:` |
+| `186` | `+ return {` |
+| `187` | `+ 'success': True,` |
+| `188` | `+ 'message': 'Slack webhook is working correctly!'` |
+| `189` | `+ }` |
+| `190` | `+ else:` |
+| `191` | `+ return {` |
+| `192` | `+ 'success': False,` |
+| `193` | `+ 'message': f'Slack webhook error: {response.text}'` |
+| `194` | `+ }` |
+| `195` | `+ exceptExceptionase:` |
+| `196` | `+ return {` |
+| `197` | `+ 'success': False,` |
+| `198` | `+ 'message': f'Connection failed: {str(e)}'` |
+| `199` | `+ }` |
+| `200` | `+` |
+| `201` | `+` |
+| `202` | `+ deftest\_slack\_api(bot\_token):` |
+| `203` | `+ """Test Slack Bot Token"""` |
+| `204` | `+ try:` |
+| `205` | `+ # Test auth` |
+| `206` | `+ url="https://slack.com/api/auth.test"` |
+| `207` | `+ headers= {'Authorization': f'Bearer {bot\_token}'}` |
+| `208` | `+` |
+| `209` | `+ response=requests.get(url, headers=headers)` |
+| `210` | `+ data=response.json()` |
+| `211` | `+` |
+| `212` | `+ ifdata.get('ok'):` |
+| `213` | `+ bot\_name=data.get('bot\_id', 'Unknown')` |
+| `214` | `+ return {` |
+| `215` | `+ 'success': True,` |
+| `216` | `+ 'message': f'Slack bot token is valid! (Bot ID: {bot\_name})',` |
+| `217` | `+ 'bot\_name': bot\_name` |
+| `218` | `+ }` |
+| `219` | `+ else:` |
+| `220` | `+ return {` |
+| `221` | `+ 'success': False,` |
+| `222` | `+ 'message': f'Auth failed: {data.get("error")}'` |
+| `223` | `+ }` |
+| `224` | `+ exceptExceptionase:` |
+| `225` | `+ return {` |
+| `226` | `+ 'success': False,` |
+| `227` | `+ 'message': f'Connection failed: {str(e)}'` |
+| `228` | `+ }` |
+| `229` | `+` |
+| `230` | `+` |
+| `231` | `+ defget\_slack\_channels(bot\_token):` |
+| `232` | `+ """` |
+| `233` | `+ Get list of available Slack channels` |
+| `234` | `+ Requires conversations:read scope` |
+| `235` | `+ """` |
+| `236` | `+ url="https://slack.com/api/conversations.list"` |
+| `237` | `+ headers= {` |
+| `238` | `+ 'Authorization': f'Bearer {bot\_token}'` |
+| `239` | `+ }` |
+| `240` | `+` |
+| `241` | `+ params= {` |
+| `242` | `+ 'types': 'public\_channel,private\_channel',` |
+| `243` | `+ 'limit': 1000` |
+| `244` | `+ }` |
+| `245` | `+` |
+| `246` | `+ try:` |
+| `247` | `+ response=requests.get(url, params=params, headers=headers)` |
+| `248` | `+ data=response.json()` |
+| `249` | `+` |
+| `250` | `+ ifdata.get('ok'):` |
+| `251` | `+ channels= []` |
+| `252` | `+ forchannelindata.get('channels', []):` |
+| `253` | `+ channels.append({` |
+| `254` | `+ 'id': channel.get('id'),` |
+| `255` | `+ 'name': f"#{channel.get('name')}",` |
+| `256` | `+ 'is\_private': channel.get('is\_private', False)` |
+| `257` | `+ })` |
+| `258` | `+ return {` |
+| `259` | `+ 'success': True,` |
+| `260` | `+ 'channels': channels` |
+| `261` | `+ }` |
+| `262` | `+ else:` |
+| `263` | `+ return {` |
+| `264` | `+ 'success': False,` |
+| `265` | `+ 'message': f'Failed to get channels: {data.get("error")}',` |
+| `266` | `+ 'channels': []` |
+| `267` | `+ }` |
+| `268` | `+ exceptExceptionase:` |
+| `269` | `+ return {` |
+| `270` | `+ 'success': False,` |
+| `271` | `+ 'message': str(e),` |
+| `272` | `+ 'channels': []` |
+| `273` | `+ }` |
+Collapse file
+### [`‎app/services/sms\_service.py‎`](#diff-af9408f914dc830693d160bc493564ac0b7fe95463878936b2e4654d31bc2919)
+Copy file name to clipboardExpand all lines: app/services/sms\\_service.py
++31Lines changed: 31 additions & 0 deletions
+| Original file line number | Diff line number | Diff line change |
+| --- | --- | --- |
+| `@@ -1,12 +1,43 @@` |
+| `1` | `+ importre` |
+| `1` | `2` | `importrequests` |
+| `2` | `3` |
+| `3` | `4` |
+| `5` | `+ defnormalize\_phone(phone):` |
+| `6` | `+ """` |
+| `7` | `+ Normalize phone number to E.164 format` |
+| `8` | `+ - Remove all non-digit characters except leading +` |
+| `9` | `+ - Ensure number starts with + for E.164 format` |
+| `10` | `+ """` |
+| `11` | `+ ifnotphone:` |
+| `12` | `+ returnNone` |
+| `13` | `+` |
+| `14` | `+ # Strip whitespace` |
+| `15` | `+ phone=phone.strip()` |
+| `16` | `+` |
+| `17` | `+ # Remove all non-digit characters` |
+| `18` | `+ digits=re.sub(r'\D', '', phone)` |
+| `19` | `+` |
+| `20` | `+ # If already has + prefix, preserve it` |
+| `21` | `+ ifphone.startswith('+'):` |
+| `22` | `+ return'+'+digits` |
+| `23` | `+` |
+| `24` | `+ # If it's a 10-15 digit number without country code, add + (assuming US)` |
+| `25` | `+ # For international numbers, user should include country code` |
+| `26` | `+ iflen(digits) >=10andlen(digits) <=15:` |
+| `27` | `+ return'+'+digits` |
+| `28` | `+` |
+| `29` | `+ returnphone` |
+| `30` | `+` |
+| `31` | `+` |
+| `4` | `32` | `defsend\_sms(to\_phone, subject, body, config):` |
+| `5` | `33` | `"""` |
+| `6` | `34` | `Send SMS using Twilio or generic HTTP API` |
+| `7` | `35` | `"""` |
+| `8` | `36` | `provider=config.get('provider', 'twilio')` |
+| `9` | `37` |
+| `38` | `+ # Normalize phone number` |
+| `39` | `+ to\_phone=normalize\_phone(to\_phone)` |
+| `40` | `+` |
+| `10` | `41` | `ifprovider=='twilio':` |
+| `11` | `42` | `returnsend\_twilio(to\_phone, subject, body, config)` |
+| `12` | `43` | `else:` |
+## 0 commit comments
+Comments
+0 (0)
+Please [sign in](/login?return\_to=https://github.com/miloshov/ESB-NAS/commit/953c74c37c92d3e6a9c8b0c05e6b3f5af3687b21) to comment.
+## Footer
+© 2026 GitHub, Inc.
+### Footer navigation
+\* [Terms](https://docs.github.com/site-policy/github-terms/github-terms-of-service)
+\* [Privacy](https://docs.github.com/site-policy/privacy-policies/github-privacy-statement)
+\* [Security](https://github.com/security)
+\* [Status](https://www.githubstatus.com/)
+\* [Community](https://github.community/)
+\* [Docs](https://docs.github.com/)
+\* [Contact](https://support.github.com?tags=dotcom-footer)
+\* Manage cookies
+\* Do not share my personal information
+You can’t perform that action at this time.
