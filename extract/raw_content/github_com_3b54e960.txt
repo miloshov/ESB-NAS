@@ -1,6 +1,6 @@
 # Source URL: https://github.com/miloshov/ESB-NAS
-# Content Length: 21338 characters
-# Extracted at: 2026-01-18 19:31:26
+# Content Length: 21347 characters
+# Extracted at: 2026-01-18 19:52:00
 #============================================================
 
 GitHub - miloshov/ESB-NAS: Emergency Notification Alert System - Standalone application for sending urgent messages via Email, SMS, Telegram, and Slack
@@ -142,7 +142,7 @@ Additional navigation options
 \* [Insights](/miloshov/ESB-NAS/pulse)
 # miloshov/ESB-NAS
 main
-[\*\*2\*\*Branches](/miloshov/ESB-NAS/branches)[\*\*0\*\*Tags](/miloshov/ESB-NAS/tags)
+[\*\*3\*\*Branches](/miloshov/ESB-NAS/branches)[\*\*1\*\*Tag](/miloshov/ESB-NAS/tags)
 Go to file
 Code
 Open more actions menu
@@ -380,7 +380,7 @@ watching](/miloshov/ESB-NAS/watchers)
 forks](/miloshov/ESB-NAS/forks)
 [Report repository](/contact/report-content?content\_url=https%3A%2F%2Fgithub.com%2Fmiloshov%2FESB-NAS&report=miloshov+%28user%29)
 ## [Releases](/miloshov/ESB-NAS/releases)
-No releases published
+[1tags](/miloshov/ESB-NAS/tags)
 ## [Packages 0](/users/miloshov/packages?repo\_name=ESB-NAS)
 No packages published
 ## Languages
