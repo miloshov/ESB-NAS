@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header class="header">
+    <div class="logo">
+        <svg class="logo-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+        </svg>
+        ESB-NAS
+    </div>
+    
+    <div class="header-controls">
+        <div class="status-indicator">
+            <span class="status-dot"></span>
+            <span data-i18n="status_online">System Online</span>
+        </div>
+        
+        <div class="selector-group">
+            <button class="selector-btn lang-btn {% if session.get('language') == 'en' %}active{% endif %}" data-lang="en">EN</button>
+            <button class="selector-btn lang-btn {% if session.get('language') == 'ua' %}active{% endif %}" data-lang="ua">UA</button>
+            <button class="selector-btn lang-btn {% if session.get('language') == 'sr' %}active{% endif %}" data-lang="sr">SR</button>
+            <button class="selector-btn lang-btn {% if session.get('language') == 'bg' %}active{% endif %}" data-lang="bg">BG</button>
+        </div>
+        
+        <button class="btn btn-secondary" id="theme-btn" data-i18n="theme">Theme</button>
+        
+        <a href="{{ url_for('main.login') }}" class="btn btn-outline" data-i18n="admin_panel">Admin Panel</a>
+    </div>
+</header>
+
+<main class="main-container">
+    <div class="alert-section">
+        <div class="card" style="margin-bottom: 30px;">
+            <h1 style="margin-bottom: 10px; color: var(--primary-color);" data-i18n="alert_title">Emergency Alert System</h1>
+            <p style="color: var(--text-secondary);" data-i18n="alert_subtitle">Select a template and press the button to send an alert</p>
+        </div>
+        
+        <div class="form-group">
+            <label class="form-label" data-i18n="select_template">Select Alert Template</label>
+            <select class="form-select" id="template-select">
+                <option value="">-- Choose template --</option>
+                {% for template in templates %}
+                <option value="{{ template.id }}">{{ template.title }}</option>
+                {% endfor %}
+            </select>
+        </div>
+        
+        <div class="alert-info">
+            <span data-i18n="recipients_count">Active Recipients</span>: <strong>{{ recipients_count }}</strong>
+        </div>
+        
+        <button class="btn btn-alert" id="alert-btn" data-i18n="alert_button">ALERT!</button>
+    </div>
+</main>
+
+<div class="toast-container"></div>
+
+<script>
+    // Pass template data to JavaScript
+    const templates = {{ templates|tojson }};
+    
+    // Override current lang/theme from server session
+    {% if session.get('language') %}
+    currentLang = '{{ session.get('language') }}';
+    {% endif %}
+    
+    {% if session.get('theme') %}
+    currentTheme = '{{ session.get('theme') }}';
+    {% endif %}
+    
+    // Load preferences on page load
+    loadPreferences();
+</script>
+{% endblock %}

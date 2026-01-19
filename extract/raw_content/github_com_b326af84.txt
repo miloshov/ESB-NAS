@@ -1,0 +1,361 @@
+# Source URL: https://github.com/miloshov/ESB-NAS/commits/main
+# Content Length: 18662 characters
+# Extracted at: 2026-01-18 19:31:25
+#============================================================
+
+Commits · miloshov/ESB-NAS · GitHub
+[Skip to content](#start-of-content)
+## Navigation Menu
+Toggle navigation
+[Sign in](/login?return\_to=https%3A%2F%2Fgithub.com%2Fmiloshov%2FESB-NAS%2Fcommits%2Fmain)
+Appearance settings
+\* Platform
++ AI CODE CREATION
+- [GitHub CopilotWrite better code with AI](https://github.com/features/copilot)
+- [GitHub SparkBuild and deploy intelligent apps](https://github.com/features/spark)
+- [GitHub ModelsManage and compare prompts](https://github.com/features/models)
+- [MCP RegistryNewIntegrate external tools](https://github.com/mcp)
++ DEVELOPER WORKFLOWS
+- [ActionsAutomate any workflow](https://github.com/features/actions)
+- [CodespacesInstant dev environments](https://github.com/features/codespaces)
+- [IssuesPlan and track work](https://github.com/features/issues)
+- [Code ReviewManage code changes](https://github.com/features/code-review)
++ APPLICATION SECURITY
+- [GitHub Advanced SecurityFind and fix vulnerabilities](https://github.com/security/advanced-security)
+- [Code securitySecure your code as you build](https://github.com/security/advanced-security/code-security)
+- [Secret protectionStop leaks before they start](https://github.com/security/advanced-security/secret-protection)
++ EXPLORE
+- [Why GitHub](https://github.com/why-github)
+- [Documentation](https://docs.github.com)
+- [Blog](https://github.blog)
+- [Changelog](https://github.blog/changelog)
+- [Marketplace](https://github.com/marketplace)
+[View all features](https://github.com/features)
+\* Solutions
++ BY COMPANY SIZE
+- [Enterprises](https://github.com/enterprise)
+- [Small and medium teams](https://github.com/team)
+- [Startups](https://github.com/enterprise/startups)
+- [Nonprofits](https://github.com/solutions/industry/nonprofits)
++ BY USE CASE
+- [App Modernization](https://github.com/solutions/use-case/app-modernization)
+- [DevSecOps](https://github.com/solutions/use-case/devsecops)
+- [DevOps](https://github.com/solutions/use-case/devops)
+- [CI/CD](https://github.com/solutions/use-case/ci-cd)
+- [View all use cases](https://github.com/solutions/use-case)
++ BY INDUSTRY
+- [Healthcare](https://github.com/solutions/industry/healthcare)
+- [Financial services](https://github.com/solutions/industry/financial-services)
+- [Manufacturing](https://github.com/solutions/industry/manufacturing)
+- [Government](https://github.com/solutions/industry/government)
+- [View all industries](https://github.com/solutions/industry)
+[View all solutions](https://github.com/solutions)
+\* Resources
++ EXPLORE BY TOPIC
+- [AI](https://github.com/resources/articles?topic=ai)
+- [Software Development](https://github.com/resources/articles?topic=software-development)
+- [DevOps](https://github.com/resources/articles?topic=devops)
+- [Security](https://github.com/resources/articles?topic=security)
+- [View all topics](https://github.com/resources/articles)
++ EXPLORE BY TYPE
+- [Customer stories](https://github.com/customer-stories)
+- [Events & webinars](https://github.com/resources/events)
+- [Ebooks & reports](https://github.com/resources/whitepapers)
+- [Business insights](https://github.com/solutions/executive-insights)
+- [GitHub Skills](https://skills.github.com)
++ SUPPORT & SERVICES
+- [Documentation](https://docs.github.com)
+- [Customer support](https://support.github.com)
+- [Community forum](https://github.com/orgs/community/discussions)
+- [Trust center](https://github.com/trust-center)
+- [Partners](https://github.com/partners)
+\* Open Source
++ COMMUNITY
+- [GitHub SponsorsFund open source developers](https://github.com/sponsors)
++ PROGRAMS
+- [Security Lab](https://securitylab.github.com)
+- [Maintainer Community](https://maintainers.github.com)
+- [Accelerator](https://github.com/accelerator)
+- [Archive Program](https://archiveprogram.github.com)
++ REPOSITORIES
+- [Topics](https://github.com/topics)
+- [Trending](https://github.com/trending)
+- [Collections](https://github.com/collections)
+\* Enterprise
++ ENTERPRISE SOLUTIONS
+- [Enterprise platformAI-powered developer platform](https://github.com/enterprise)
++ AVAILABLE ADD-ONS
+- [GitHub Advanced SecurityEnterprise-grade security features](https://github.com/security/advanced-security)
+- [Copilot for BusinessEnterprise-grade AI features](https://github.com/features/copilot/copilot-business)
+- [Premium SupportEnterprise-grade 24/7 support](https://github.com/premium-support)
+\* [Pricing](https://github.com/pricing)
+Search or jump to...
+# Search code, repositories, users, issues, pull requests...
+Search
+Clear
+[Search syntax tips](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax)
+# Provide feedback
+We read every piece of feedback, and take your input very seriously.
+Include my email address so I can be contacted
+Cancel
+Submit feedback
+# Saved searches
+## Use saved searches to filter your results more quickly
+Name
+Query
+To see all available qualifiers, see our [documentation](https://docs.github.com/search-github/github-code-search/understanding-github-code-search-syntax).
+Cancel
+Create saved search
+[Sign in](/login?return\_to=https%3A%2F%2Fgithub.com%2Fmiloshov%2FESB-NAS%2Fcommits%2Fmain)
+[Sign up](/signup?ref\_cta=Sign+up&ref\_loc=header+logged+out&ref\_page=%2F%3Cuser-name%3E%2F%3Crepo-name%3E%2Fcommits%2Fshow&source=header-repo&source\_repo=miloshov%2FESB-NAS)
+Appearance settings
+Resetting focus
+You signed in with another tab or window. Reload to refresh your session.You signed out in another tab or window. Reload to refresh your session.You switched accounts on another tab or window. Reload to refresh your session.Dismiss alert
+[miloshov](/miloshov)/\*\*[ESB-NAS](/miloshov/ESB-NAS)\*\*Public
+\* [Notifications](/login?return\_to=%2Fmiloshov%2FESB-NAS)You must be signed in to change notification settings
+\* [Fork
+0](/login?return\_to=%2Fmiloshov%2FESB-NAS)
+\* [Star
+0](/login?return\_to=%2Fmiloshov%2FESB-NAS)
+\* [Code](/miloshov/ESB-NAS)
+\* [Issues0](/miloshov/ESB-NAS/issues)
+\* [Pull requests0](/miloshov/ESB-NAS/pulls)
+\* [Actions](/miloshov/ESB-NAS/actions)
+\* [Projects0](/miloshov/ESB-NAS/projects)
+\* [Security](/miloshov/ESB-NAS/security)
+[### Uh oh!](/miloshov/ESB-NAS/security)
+[There was an error while loading.](/miloshov/ESB-NAS/security) Please reload this page.
+\* [Insights](/miloshov/ESB-NAS/pulse)
+Additional navigation options
+\* [Code](/miloshov/ESB-NAS)
+\* [Issues](/miloshov/ESB-NAS/issues)
+\* [Pull requests](/miloshov/ESB-NAS/pulls)
+\* [Actions](/miloshov/ESB-NAS/actions)
+\* [Projects](/miloshov/ESB-NAS/projects)
+\* [Security](/miloshov/ESB-NAS/security)
+\* [Insights](/miloshov/ESB-NAS/pulse)
+# Commits
+## Branch selector
+main
+## User selector
+All users
+## Datepicker
+All time
+## Commit History
+### Commits on Jan 17, 2026
+\* #### [Fix: Create ZIP files in ESB-NAS subfolder for upload-artifact compatibility](/miloshov/ESB-NAS/commit/6e4416a6d07a2877634522420957e1af7c85d3c6)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[6e4416a](/miloshov/ESB-NAS/commit/6e4416a6d07a2877634522420957e1af7c85d3c6)
+Copy full SHA for 6e4416a
+\* #### [Fix: Ensure ESB-Alerts-Launcher directory exists before writing files](/miloshov/ESB-NAS/commit/922ef1075bc01b2e16ce70f327c2afe0d3452911)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[922ef10](/miloshov/ESB-NAS/commit/922ef1075bc01b2e16ce70f327c2afe0d3452911)
+Copy full SHA for 922ef10
+\* #### [Use subprocess for PyInstaller to capture output properly](/miloshov/ESB-NAS/commit/f576b7e43a5b71efee8e9850e878b63a08ea9850)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[f576b7e](/miloshov/ESB-NAS/commit/f576b7e43a5b71efee8e9850e878b63a08ea9850)
+Copy full SHA for f576b7e
+\* #### [Add PyInstaller debug output and error handling](/miloshov/ESB-NAS/commit/5a3f88e4d819c4fae91015698aad9fdd12a9dde3)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[5a3f88e](/miloshov/ESB-NAS/commit/5a3f88e4d819c4fae91015698aad9fdd12a9dde3)
+Copy full SHA for 5a3f88e
+\* #### [Add detailed debug output for ZIP creation](/miloshov/ESB-NAS/commit/222380aeb0baac03c008e86cea4735c50576c034)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[222380a](/miloshov/ESB-NAS/commit/222380aeb0baac03c008e86cea4735c50576c034)
+Copy full SHA for 222380a
+\* #### [Fix: Create ZIP files one level up for upload-artifact](/miloshov/ESB-NAS/commit/94a8c106b001ccdaa4a1110cdaf753949cc7382f)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[94a8c10](/miloshov/ESB-NAS/commit/94a8c106b001ccdaa4a1110cdaf753949cc7382f)
+Copy full SHA for 94a8c10
+\* #### [Fix: Create ZIP files in ESB-NAS folder for upload-artifact compatibility](/miloshov/ESB-NAS/commit/1f8bee8ac790dff468a2f2480be5144789c364d7)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[1f8bee8](/miloshov/ESB-NAS/commit/1f8bee8ac790dff468a2f2480be5144789c364d7)
+Copy full SHA for 1f8bee8
+\* #### [Fix: Create ZIP files directly in working directory](/miloshov/ESB-NAS/commit/5215c58e4f0659ec60f8df16c15fdc3748682b62)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[5215c58](/miloshov/ESB-NAS/commit/5215c58e4f0659ec60f8df16c15fdc3748682b62)
+Copy full SHA for 5215c58
+\* #### [Fix ZIP paths for upload-artifact compatibility](/miloshov/ESB-NAS/commit/d625840fd17b9b9ab5ac756f8826a2219c7761e7)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[d625840](/miloshov/ESB-NAS/commit/d625840fd17b9b9ab5ac756f8826a2219c7761e7)
+Copy full SHA for d625840
+\* #### [Trigger build](/miloshov/ESB-NAS/commit/5c52821856424d96ca93cfe3686f54b3aa12597d)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[5c52821](/miloshov/ESB-NAS/commit/5c52821856424d96ca93cfe3686f54b3aa12597d)
+Copy full SHA for 5c52821
+\* #### [Fix Unicode encoding and add debug output for ZIP locations](/miloshov/ESB-NAS/commit/9343c4b94e9f2b777b6de7c482f984baf532f2aa)
+Show description for 9343c4b
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[9343c4b](/miloshov/ESB-NAS/commit/9343c4b94e9f2b777b6de7c482f984baf532f2aa)
+Copy full SHA for 9343c4b
+\* #### [Fix: use Python for ZIP creation instead of PowerShell (Run #15 issue)](/miloshov/ESB-NAS/commit/4d2fb7b767af7888e62b3bec1a5de2162254fb57)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[4d2fb7b](/miloshov/ESB-NAS/commit/4d2fb7b767af7888e62b3bec1a5de2162254fb57)
+Copy full SHA for 4d2fb7b
+\* #### [Debug: add file listing step to verify ZIP creation](/miloshov/ESB-NAS/commit/627ff33eea64317a41705c8b6045e467fe6986f7)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[627ff33](/miloshov/ESB-NAS/commit/627ff33eea64317a41705c8b6045e467fe6986f7)
+Copy full SHA for 627ff33
+\* #### [Fix: upload both ZIP artifacts (Server + Launcher)](/miloshov/ESB-NAS/commit/52a35171693cfc10907a3b4ad508f191d2754515)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[52a3517](/miloshov/ESB-NAS/commit/52a35171693cfc10907a3b4ad508f191d2754515)
+Copy full SHA for 52a3517
+\* #### [Fix workflow: use Python for ZIP creation (no PowerShell dependency)](/miloshov/ESB-NAS/commit/b394c861c8f3fb7add702307caed810903deb96c)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[b394c86](/miloshov/ESB-NAS/commit/b394c861c8f3fb7add702307caed810903deb96c)
+Copy full SHA for b394c86
+\* #### [Fix build: use zipfile instead of PowerShell, add version v0.15](/miloshov/ESB-NAS/commit/cc1ba558310ac35aa02eaccbf5ef59064c947e8a)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[cc1ba55](/miloshov/ESB-NAS/commit/cc1ba558310ac35aa02eaccbf5ef59064c947e8a)
+Copy full SHA for cc1ba55
+\* #### [Add auto-browser launch and network launcher for mass deployment](/miloshov/ESB-NAS/commit/3a629d202a09d6104378a4839fac0a95ebf8efd2)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[3a629d2](/miloshov/ESB-NAS/commit/3a629d202a09d6104378a4839fac0a95ebf8efd2)
+Copy full SHA for 3a629d2
+\* #### [Fix SMS recipient issue: normalize phone numbers and add logging](/miloshov/ESB-NAS/commit/953c74c37c92d3e6a9c8b0c05e6b3f5af3687b21)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 17, 2026
+[953c74c](/miloshov/ESB-NAS/commit/953c74c37c92d3e6a9c8b0c05e6b3f5af3687b21)
+Copy full SHA for 953c74c
+### Commits on Jan 16, 2026
+\* #### [Fix JavaScript errors in action buttons](/miloshov/ESB-NAS/commit/1555acd4946f4c863393d343b79210fc34b2c75c)
+Show description for 1555acd
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 16, 2026
+[1555acd](/miloshov/ESB-NAS/commit/1555acd4946f4c863393d343b79210fc34b2c75c)
+Copy full SHA for 1555acd
+\* #### [Fix action buttons with proper POST routes](/miloshov/ESB-NAS/commit/b84f902d1c4ef2c4fb824c4fe3bc12a01c3a6096)
+Show description for b84f902
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 16, 2026
+[b84f902](/miloshov/ESB-NAS/commit/b84f902d1c4ef2c4fb824c4fe3bc12a01c3a6096)
+Copy full SHA for b84f902
+\* #### [Fix action buttons (Edit, Activate/Deactivate, Delete)](/miloshov/ESB-NAS/commit/3a8fabcb8a2ddb6979d40d2da1c2fdd0f9a3b63a)
+Show description for 3a8fabc
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 16, 2026
+[3a8fabc](/miloshov/ESB-NAS/commit/3a8fabcb8a2ddb6979d40d2da1c2fdd0f9a3b63a)
+Copy full SHA for 3a8fabc
+\* #### [Add Telegram direct test page](/miloshov/ESB-NAS/commit/e5e5c4024a86c195cfc621c2a5ecbff6a997d2ca)
+Show description for e5e5c40
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 16, 2026
+[e5e5c40](/miloshov/ESB-NAS/commit/e5e5c4024a86c195cfc621c2a5ecbff6a997d2ca)
+Copy full SHA for e5e5c40
+\* #### [Fix template paths properly](/miloshov/ESB-NAS/commit/1d475a4a1051e8cd290d1474779e956946c6d787)
+Show description for 1d475a4
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 16, 2026
+[1d475a4](/miloshov/ESB-NAS/commit/1d475a4a1051e8cd290d1474779e956946c6d787)
+Copy full SHA for 1d475a4
+\* #### [Fix template loading for PyInstaller](/miloshov/ESB-NAS/commit/17cae8d0f9e90612a845b8a6fe2344fa0706bc7d)
+Show description for 17cae8d
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 16, 2026
+[17cae8d](/miloshov/ESB-NAS/commit/17cae8d0f9e90612a845b8a6fe2344fa0706bc7d)
+Copy full SHA for 17cae8d
+\* #### [Fix template paths for PyInstaller frozen mode](/miloshov/ESB-NAS/commit/6fb8459ea6bd4067bc1d16daaa269d1270e428ef)
+Show description for 6fb8459
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 16, 2026
+[6fb8459](/miloshov/ESB-NAS/commit/6fb8459ea6bd4067bc1d16daaa269d1270e428ef)
+Copy full SHA for 6fb8459
+\* #### [Fix Flask-Login and blueprint endpoint issues](/miloshov/ESB-NAS/commit/6de016bf864848b6bd859fe0e85b96ddd6e903bf)
+Show description for 6de016b
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 16, 2026
+[6de016b](/miloshov/ESB-NAS/commit/6de016bf864848b6bd859fe0e85b96ddd6e903bf)
+Copy full SHA for 6de016b
+\* #### [Fix GitHub Actions workflow for Windows build](/miloshov/ESB-NAS/commit/8daccb60cb25df81059fa7a6af957a0d62ebcde4)
+Show description for 8daccb6
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 16, 2026
+[8daccb6](/miloshov/ESB-NAS/commit/8daccb60cb25df81059fa7a6af957a0d62ebcde4)
+Copy full SHA for 8daccb6
+\* #### [Fix: Use Python build script instead of command line](/miloshov/ESB-NAS/commit/2b49e34f8ccacf46bfc2baf43c23fe4947e37f15)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 16, 2026
+[2b49e34](/miloshov/ESB-NAS/commit/2b49e34f8ccacf46bfc2baf43c23fe4947e37f15)
+Copy full SHA for 2b49e34
+\* #### [Fix: PowerShell command syntax](/miloshov/ESB-NAS/commit/5fe83229fe23425d56095c88815d1e2930fbdc01)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 16, 2026
+[5fe8322](/miloshov/ESB-NAS/commit/5fe83229fe23425d56095c88815d1e2930fbdc01)
+Copy full SHA for 5fe8322
+\* #### [Fix: Use --onedir mode for proper DLL inclusion](/miloshov/ESB-NAS/commit/f07d8af6c3f67cb0baa31b6384836abd460d9fd5)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 16, 2026
+[f07d8af](/miloshov/ESB-NAS/commit/f07d8af6c3f67cb0baa31b6384836abd460d9fd5)
+Copy full SHA for f07d8af
+\* #### [Add standalone Windows executable build support](/miloshov/ESB-NAS/commit/3fa3638955ad52ca534e36422a8680bef619c92c)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 16, 2026
+[3fa3638](/miloshov/ESB-NAS/commit/3fa3638955ad52ca534e36422a8680bef619c92c)
+Copy full SHA for 3fa3638
+\* #### [Initial commit: ESB-NAS Emergency Notification Alert System](/miloshov/ESB-NAS/commit/6baa9cec930fcc0e259b0db3da5a5d9d35d7e8c3)
+![](https://github.githubassets.com/images/gravatars/gravatar-user-420.png?size=32)
+Miloshov
+committedJan 16, 2026
+[6baa9ce](/miloshov/ESB-NAS/commit/6baa9cec930fcc0e259b0db3da5a5d9d35d7e8c3)
+Copy full SHA for 6baa9ce
+## Footer
+© 2026 GitHub, Inc.
+### Footer navigation
+\* [Terms](https://docs.github.com/site-policy/github-terms/github-terms-of-service)
+\* [Privacy](https://docs.github.com/site-policy/privacy-policies/github-privacy-statement)
+\* [Security](https://github.com/security)
+\* [Status](https://www.githubstatus.com/)
+\* [Community](https://github.community/)
+\* [Docs](https://docs.github.com/)
+\* [Contact](https://support.github.com?tags=dotcom-footer)
+\* Manage cookies
+\* Do not share my personal information
+You can’t perform that action at this time.

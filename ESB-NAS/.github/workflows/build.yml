@@ -1,0 +1,55 @@
+name: Build Windows Executable
+
+on:
+  push:
+    branches: [master, main]
+  workflow_dispatch:
+  release:
+    types: [created]
+
+jobs:
+  build:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          path: ESB-NAS
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        working-directory: ./ESB-NAS
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+          pip install pyinstaller
+
+      - name: Build executable
+        working-directory: ./ESB-NAS
+        run: |
+          python build_exe.py
+
+      - name: Create ZIP for distribution
+        working-directory: ./ESB-NAS
+        run: |
+          Compress-Archive -Path dist/ESB-NAS -DestinationPath ESB-NAS-Windows.zip -Force
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ESB-NAS-Windows
+          path: ESB-NAS/ESB-NAS-Windows.zip
+
+      - name: Create Release
+        if: github.event_name == 'release'
+        uses: softprops/action-gh-release@v2
+        with:
+          files: ESB-NAS/ESB-NAS-Windows.zip
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="login-container">
+    <div class="card login-card">
+        <div class="login-logo">
+            <svg style="width: 60px; height: 60px; color: var(--primary-color);" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+            </svg>
+            <h1 style="margin-top: 15px;">ESB-NAS</h1>
+            <p style="color: var(--text-secondary);">Admin Login</p>
+        </div>
+        
+        {% if error %}
+        <div class="error-message">{{ error }}</div>
+        {% endif %}
+        
+        <form method="POST" action="{{ url_for('main.login') }}">
+            <div class="form-group">
+                <label class="form-label" data-i18n="username">Username</label>
+                <input type="text" class="form-input" name="username" required data-i18n-placeholder="username">
+            </div>
+            
+            <div class="form-group">
+                <label class="form-label" data-i18n="password">Password</label>
+                <input type="password" class="form-input" name="password" required data-i18n-placeholder="password">
+            </div>
+            
+            <button type="submit" class="btn btn-primary" style="width: 100%;" data-i18n="login_button">Sign In</button>
+        </form>
+        
+        <div style="margin-top: 20px; text-align: center;">
+            <a href="{{ url_for('main.index') }}" class="btn btn-outline" data-i18n="alert_title">Back to Home</a>
+        </div>
+    </div>
+</div>
+{% endblock %}
